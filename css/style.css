@@ -13,6 +13,7 @@ body{
 }
 
 .header{
+	z-index: 9;
 	background: #2B2743;
 	height: 80px;
 	left: 0;
@@ -48,6 +49,8 @@ body{
 	font-weight: 600;
 	font-size: 18px;
 	transition: .25s;
+	display: inline-block;
+	cursor: pointer;
 }
 
 .navigation-element:hover{
@@ -61,6 +64,7 @@ body{
  */
 
 .navigation-element:before {
+	opacity: .75;
   content: "";
   position: absolute;
   width: 105%;
@@ -77,6 +81,7 @@ body{
 }
 
 .navigation-element:hover:before {
+	opacity: 1;
   visibility: visible;
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
@@ -146,12 +151,10 @@ button:hover{
 
 button:focus{
 	outline:0;
-	margin: -2px 4px 0px 4px;
 }
 
 button:active{
 	transform: translateY(1px);
-	margin: -2px 4px 0px 4px;
 }
 
 .results-background{
@@ -177,7 +180,7 @@ button:active{
 }
 
 .card{
-	height: 200px;
+	height: 240px;
 	overflow-y: scroll;
 	display: inline-block;
 	vertical-align: top;
@@ -185,7 +188,7 @@ button:active{
 	width:27%;
 	margin: 10px;
 	background: #fff;
-	padding: 20px 24px 20px 24px;
+	padding: 12px 24px 12px 24px;
 	border-radius: 8px;
 	border: .5px solid rgba(221,216,255,0.50);
 	color: #333;
@@ -205,145 +208,79 @@ button:active{
 	opacity: 1;
 }
 
-.circle{
-	background: #33FF33;
-	width: 12px;
-	height: 12px;
-	border-radius: 16px;
-	display: inline;
-}
-
-.eyes{
-	transition: .2s;
-}
-
-.topsection{
-	margin-top: 36px;
-	background: #FFFFFF;
-	border-radius: 8px 8px 0 0;
-	padding: 12px 40px 12px 40px;
-	max-width: 500px;
-}
-
-.instructions-primary{
-		opacity: 90%;
-		font-size: 20px;
-}
-
-.instructions-secondary{
-		opacity: 50%;
-		margin-top: -12px;
-		margin-bottom: 0px;
-		font-size: 14px;
-		font-weight: 400;
-}
-
-.fontbot{
-	position: absolute;
-	width: 360px;
-	margin-bottom: -20px;
-	margin-left: 0;
-	cursor: -webkit-grabbing;
-	cursor: grabbing;
-	bottom: 0;
-	-webkit-transition: .25s;
-	-o-transition: .25s;
-	transition: .25s;
-	opacity: .95;
-}
-
-.fontbot:hover{
-	margin-bottom: 0px;
-	opacity: 1;
-}
-
-#face-smile{
-d: path("M150,150.3 C157.440006,150.3        167.240006,150.3 179.4,150.3     C191.559994,150.3 201.959994,150.3 210.6,150.3");
-}
-
-.smile{
-	-webkit-animation-name: smile;
-	        animation-name: smile;
-	-webkit-animation-duration: 3s;
-	        animation-duration: 3s;
-	-webkit-animation-timing-function: ease-in;
-	        animation-timing-function: ease-in;
-	-webkit-animation-fill-mode: forwards;
-	        animation-fill-mode: forwards;
-}
-
-@-webkit-keyframes smile {
-
-	0% {
-		d: path("M150,150.3 C157.440006,150.3        167.240006,150.3 179.4,150.3     C191.559994,150.3 201.959994,150.3 210.6,150.3");
-	}
-
-	5% {
-     d: path("M164,150.3 C162.506673,161.433333 171.820267,167 180,167 C188.179733,167 197.693327,161.433333 196.6,150.3");
-  }
-
-	95% {
-		 d: path("M164,150.3 C162.506673,161.433333 171.820267,167 180,167 C188.179733,167 197.693327,161.433333 196.6,150.3");
-	}
-
-	100% {
-		d: path("M150,150.3 C157.440006,150.3        167.240006,150.3 179.4,150.3     C191.559994,150.3 201.959994,150.3 210.6,150.3");
-	}
-
-}
-
-@keyframes smile {
-
-	0% {
-		d: path("M150,150.3 C157.440006,150.3        167.240006,150.3 179.4,150.3     C191.559994,150.3 201.959994,150.3 210.6,150.3");
-	}
-
-	5% {
-     d: path("M164,150.3 C162.506673,161.433333 171.820267,167 180,167 C188.179733,167 197.693327,161.433333 196.6,150.3");
-  }
-
-	95% {
-		 d: path("M164,150.3 C162.506673,161.433333 171.820267,167 180,167 C188.179733,167 197.693327,161.433333 196.6,150.3");
-	}
-
-	100% {
-		d: path("M150,150.3 C157.440006,150.3        167.240006,150.3 179.4,150.3     C191.559994,150.3 201.959994,150.3 210.6,150.3");
-	}
-
-}
-
-.fontcard{
-	background: #FFFFFF;
-	border-radius: 0 0 8px 8px;
-	padding: 36px 40px 36px 40px;
-	max-width: 500px;
-	margin-bottom: 20px;
-	max-height: 400px;
-	overflow-y:scroll;
-	transition: .2s;
-}
-
-.message-sent{
-	float: right;
-	text-align: right;
-	width: auto;
-	background: #ff4343;
-	padding: 16px 20px 16px 20px;
-	border-radius: 12px 12px 4px 12px;
-	color: #fff;
-	font-size: 14px;
-	margin-bottom: 8px;
-	transition: .2s;
-}
-
 .fontname{
+	line-height: 54px;
+	text-decoration: none;
 	display: inline;
+}
+
+.unstarred{
+	transform: translateY(8px);
+	float: right;
+	background: #F1F2F5;
+	border-radius: 36px;
+	transition: .1s;
+}
+
+.unstarred:hover{
+	transform: translateY(6px);
+}
+
+.unstarred:active{
+	transform: translateY(9px);
+}
+
+.starred{
+	background: #DDD8FF;
+}
+
+#star-in-circle{
+	background: #333;
+}
+
+#circle-for-star{
+		background: #999;
 }
 
 .fontsample{
 	line-height: 1.4;
-	font-size: 18px;
+	font-size: 20px;
 	display: inline-block;
+}
+
+.starred-font-list{
+	z-index: 10;
+	background: #2B2743;
+	height: 80%;
+	overflow-y: scroll;
+	position: absolute;
+	display: none;
+	right: 100px;
+	max-width: 30%;
+	border-radius: 0px 0px 4px 4px;
+	border-bottom: 8px solid #2B2743;
+}
+
+.card-starred{
+	z-index: 11;
+	height: auto;
+	display: block;
+	vertical-align: top;
+	text-align: left;
+	width:auto;
+	margin: 10px;
+	background: #fff;
+	padding: 12px 24px 12px 24px;
+	border-radius: 8px;
+	border: .5px solid rgba(221,216,255,0.50);
+	color: #333;
+	font-size: 20px;
+	transition: .1s;
+	border-bottom: 3px solid rgba(221,216,255,0.25);
+}
+
+.card-starred:last-child {
+	margin-bottom: 2px;
 }
 
 @media (max-width:1200px){
@@ -353,7 +290,9 @@ d: path("M150,150.3 C157.440006,150.3        167.240006,150.3 179.4,150.3     C1
 
 @media (max-width:700px){
 
+
 	.card{
+		height: auto;
 		width: auto;
 		margin: 8px 14px 8px 14px;
 }

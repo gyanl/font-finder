@@ -6591,25 +6591,7 @@ function displayFonts() {
   var bodyFontLink = "https://fonts.google.com/specimen/" + simpleBodyFont;
   document.getElementById("conversation").innerHTML += string1 + string2 + simpleBodyFont + string3 + string4 + "<br><a href='" + bodyFontLink + "'>" + fonts[indexOfMax(values)] +  "</a>" + string5;
 
-  values[indexOfMax(values)] = 0;
 
-  var simpleBodyFont = fontData["name"][fonts[indexOfMax(values)]];
-  var bodyFontLink = "https://fonts.google.com/specimen/" + simpleBodyFont;
-  document.getElementById("conversation").innerHTML += string1 + string2 + simpleBodyFont + string3 + string4 + "<br><a href='" + bodyFontLink + "'>" + fonts[indexOfMax(values)] +  "</a>" + string5;
-
-  values[indexOfMax(values)] = 0;
-
-  var simpleBodyFont = fontData["name"][fonts[indexOfMax(values)]];
-  var bodyFontLink = "https://fonts.google.com/specimen/" + simpleBodyFont;
-  document.getElementById("conversation").innerHTML += string1 + string2 + simpleBodyFont + string3 + string4 + "<br><a href='" + bodyFontLink + "'>" + fonts[indexOfMax(values)] +  "</a>" + string5;
-
-  values[indexOfMax(values)] = 0;
-
-  var simpleBodyFont = fontData["name"][fonts[indexOfMax(values)]];
-  var bodyFontLink = "https://fonts.google.com/specimen/" + simpleBodyFont;
-  document.getElementById("conversation").innerHTML += string1 + string2 + simpleBodyFont + string3 + string4 + "<br><a href='" + bodyFontLink + "'>" + fonts[indexOfMax(values)] +  "</a>" + string5;
-
-  
 
 }
 

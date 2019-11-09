@@ -3,16 +3,148 @@ html{
 }
 
 body{
-	font-family: sans-serif;
-	cursor: -webkit-grab;
-	cursor: grab;
+	font-family: "Libre Franklin", sans-serif;
 	margin: 0;
 	display: block;
 	max-height: 100%;
 	width: 100%;
 	height: 100%;
-	background: #2B2743;
+	background: #FBFBFF;
 }
+
+.header{
+	background: #2B2743;
+	height: 80px;
+	left: 0;
+	right: 0;
+	border-bottom: 1px solid rgba(221, 216, 255, 0.2);
+	display: flex;
+	align-items: center;
+}
+
+.logo{
+	display: block;
+	margin-left: 88px;
+	transition: .25s;
+}
+
+.logo:hover{
+	transform:translateY(-2px);
+}
+
+.navigation{
+	position: absolute;
+	right: 0;
+	margin-right: 120px;
+}
+
+.navigation-element{
+	float: left;
+	color: #fff;
+	font-weight: 600;
+	font-size: 18px;
+}
+
+.tag-picker{
+	background: #2B2743;
+	padding: 32px 120px 32px 120px;
+}
+
+.header-caps{
+	padding-left: 6px;
+	line-height: 22px;
+	font-size: 14px;
+	margin: 0;
+	color: #FF7760;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+.instructions{
+	padding-left: 6px;
+	padding-bottom: 8px;
+	margin: 0;
+	text-align: left;
+	color: #fff;
+	line-height: 24px;
+	font-size: 18px;
+}
+
+.suggestions{
+	display: inline-block;
+}
+
+button{
+	font-family: "Libre Franklin";
+	font-weight: 600;
+	font-size: 14px;
+	background: #847FA1;
+	color: #2B2743;
+	border-radius: 6px;
+	padding: 14px 20px 14px 20px;
+	border: none;
+	margin: 4px 4px 4px 4px;
+	transition: .1s;
+}
+
+.buttonActive{
+	opacity: 1;
+	background: #FF775F;
+	color: #fff;
+}
+
+button:hover{
+	transform: translateY(-2px);
+}
+
+button:focus{
+	outline:0;
+	margin: -2px 4px 0px 4px;
+}
+
+button:active{
+	transform: translateY(1px);
+	margin: -2px 4px 0px 4px;
+}
+
+.results-background{
+	background: #FBFBFF;
+	border-bottom: 1px solid rgba(221, 216, 255, 0.2);
+}
+
+.results{
+	margin: 36px 112px 36px 112px;
+}
+
+.boldtext{
+	padding-top: 36px;
+	padding-bottom: 0px;
+	padding-left: 12px;
+	color: #2B2743;
+	font-size: 14px;
+	font-weight: 600;
+}
+
+.card.clear {
+  clear: both;
+}
+
+.card{
+	display: inline-block;
+	vertical-align: top;
+	text-align: left;
+	width:27%;
+	margin-top: 24px;
+	background: #fff;
+	padding: 16px 20px 16px 20px;
+	border-radius: 8px;
+	border: 1px solid #DDD8FF;
+	color: #333;
+	font-size: 20px;
+	margin: 10px;
+	transition: 1s;
+}
+
 
 .circle{
 	background: #33FF33;
@@ -34,18 +166,6 @@ body{
 	max-width: 500px;
 }
 
-.instructions{
-	color: #fff;
-	font-size: 18px;
-}
-
-#descriptor{
-	color: #fff;
-	margin-top: 20px;
-	font-size: 18px;
-	margin-bottom: 8px;
-}
-
 .instructions-primary{
 		opacity: 90%;
 		font-size: 20px;
@@ -57,56 +177,6 @@ body{
 		margin-bottom: 0px;
 		font-size: 14px;
 		font-weight: 400;
-}
-
-.suggestions{
-	max-width: 60%;
-	display: inline-block;
-	padding: 0px 20px 0px 20px;
-}
-
-button{
-	font-size: 16px;
-	background: #fff;
-	color: #333;
-	border-radius: 36px;
-	padding: 12px 28px 14px 28px;
-	border: none;
-	margin: 4px 4px 4px 4px;
-	transition: .1s;
-}
-
-.buttonActive{
-	opacity: 1;
-	background: #FF775F;
-	color: #fff;
-	border: 2px solid #FF775F;
-	margin: 2px;
-}
-
-button:hover{
-	transform: translateY(-2px);
-}
-
-button:focus{
-	outline:0;
-	margin: -2px 4px 0px 4px;
-}
-
-button:active{
-	transform: translateY(1px);
-	margin: -2px 4px 0px 4px;
-}
-
-.instructions{
-	font-size: 24px;
-	font-family: "Hoefler Text", sans-serif;
-	color: #fff;
-	text-align: center;
-}
-
-.instructions-mobile{
-	display: none;
 }
 
 .fontbot{
@@ -207,25 +277,6 @@ d: path("M150,150.3 C157.440006,150.3        167.240006,150.3 179.4,150.3     C1
 	transition: .2s;
 }
 
-.message-received.clear {
-  clear: both;
-}
-
-.message-received{
-	display: inline-block;
-	vertical-align: top;
-	text-align: left;
-	max-width: 360px;
-	margin-top: 24px;
-	background: #fff;
-	padding: 16px 20px 16px 20px;
-	border-radius: 12px 12px 12px 4px;
-	color: #333;
-	font-size: 20px;
-	margin: 10px;
-	transition: 1s;
-}
-
 .fontname{
 	display: inline;
 }
@@ -236,24 +287,49 @@ d: path("M150,150.3 C157.440006,150.3        167.240006,150.3 179.4,150.3     C1
 	display: inline-block;
 }
 
+@media (max-width:1200px){
+	.card{
+		width:38%;
+}
+
 @media (max-width:700px){
 
+	.card{
+		width: auto;
+		margin: 8px 14px 8px 14px;
+}
+
+	.tag-picker{
+		background: #2B2743;
+		padding: 20px 16px 20px 16px;
+	}
+
+	.boldtext{
+		padding-top: 20px;
+		padding-bottom: 0px;
+		padding-left: 20px;
+	}
+
+	.logo{
+		display: block;
+		margin-left: 14px;
+}
+
+.navigation{
+	margin-right: 20px;
+}
+
+.navigation-element{
+	font-size: 14px;
+}
 	.suggestions{
 		max-width: 100%;
 		display: inline-block;
-		padding: 0px 20px 0px 20px;
+		padding: 0;
 	}
 
-
-	button{
-		font-size: 14px;
-		background: #fff;
-		color: #333;
-		border-radius: 36px;
-		padding: 10px 24px 12px 24px;
-		border: none;
-		margin: 4px 2px 4px 2px;
-		transition: .1s;
+	.results{
+		margin: 16px 4px 16px 4px;
 	}
 
 }

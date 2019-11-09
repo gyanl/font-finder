@@ -6481,7 +6481,7 @@ Array.prototype.remove = function() {
 };
 
 function setActive(feature){
-      var tag = document.getElementById("feature");
+      var tag = document.getElementById(feature);
 
       //Toggle Button State
       if (tag.classList.contains("buttonActive")){
@@ -6504,56 +6504,13 @@ function setActive(feature){
         lastSelected.classList.remove("buttonActive");
       }
 
-      displayFonts(currentFont);
+      displayFonts();
       console.log(activeAdjectives);
 }
 
-function displayFonts(currentFont) {
-  var counter = 0;
-  document.getElementById("conversation").innerHTML = "";
-
-  for (i = 0; i < fonts.length; i++) {
-    values[i] = 0;
-  }
 
 
-
-  //for each item in activeAdjectives
-  adjectives.forEach(function (adjective, index) {
-      for (fontname in fontData[adjective]){
-          if (fontname == currentFont) {
-            values[counter] = 1000;
-            console.log(fontname + " is currentFont " + currentFont);
-          }
-          else{
-            values[counter] = parseInt(values[counter]) + parseInt(Math.abs((fontData[adjective][fontname])-(fontData[adjective][currentFont])));
-          }
-          counter++;
-      }
-      counter = 0;
-  });
-
-  //console.log(fonts[indexOfMax(values)]);
-  var string1 = "<div class='message-received'>";
-  var string2 = "<div class='fontsample' style='font-family: ";
-  var string3 = ";'>";
-  //var string3 = ";' id='body-text'>";
-  var string4 = "Lorem ipsum is boring to read, so how about this paragraph about my favorite color? My favorite color is coral red. It’s sort of like red, sort of like orange, sort of like pink, but not quite any of them.</div><p><div class='fontname' id='info'>";
-  var string5 = "</div></div>";
-
-  var bodyFont = fonts[indexOfMin(values)];
-  var simpleBodyFont = fontData["name"][fonts[indexOfMin(values)]];
-  var bodyFontLink = "https://fonts.google.com/specimen/" + simpleBodyFont;
-  document.getElementById("conversation").innerHTML += string1 + string2 + simpleBodyFont + string3 + string4 + "<br><a href='" + bodyFontLink + "'>" + bodyFont +  "</a>" + string5;
-
-  var bodyFont = currentFont;
-  var simpleBodyFont = currentFont;
-  var bodyFontLink = "https://fonts.google.com/specimen/" + simpleBodyFont;
-  document.getElementById("conversation").innerHTML += string1 + string2 + simpleBodyFont + string3 + string4 + "<br><a href='" + bodyFontLink + "'>" + bodyFont +  "</a>" + string5;
-
-}
-
-function displayFontsBkup() {
+function displayFonts() {
   var counter = 0;
 
   document.getElementById("conversation").innerHTML = "";
@@ -6561,8 +6518,6 @@ function displayFontsBkup() {
   for (i = 0; i < fonts.length; i++) {
     values[i] = 0;
   }
-
-
 
   //for each item in activeAdjectives
   activeAdjectives.forEach(function (adjective, index) {
@@ -6574,7 +6529,7 @@ function displayFontsBkup() {
   });
 
   //console.log(fonts[indexOfMax(values)]);
-  var string1 = "<div class='message-received'>";
+  var string1 = "<div class='card'>";
   var string2 = "<div class='fontsample' style='font-family: ";
   var string3 = ";'>";
   //var string3 = ";' id='body-text'>";
@@ -6582,21 +6537,79 @@ function displayFontsBkup() {
   var string5 = "</div></div>";
 
   document.getElementById("conversation").innerHTML = "";
+  document.getElementById("descriptor").innerHTML = "Showing fonts that are " + activeAdjectives;
 
-//Print 1
   var simpleBodyFont = fontData["name"][fonts[indexOfMax(values)]];
   var bodyFontLink = "https://fonts.google.com/specimen/" + simpleBodyFont;
   document.getElementById("conversation").innerHTML += string1 + string2 + simpleBodyFont + string3 + string4 + "<br><a href='" + bodyFontLink + "'>" + fonts[indexOfMax(values)] +  "</a>" + string5;
 
-  //Print 1
-    var simpleBodyFont = fontData["name"][fonts[indexOfMax(values)]];
-    var bodyFontLink = "https://fonts.google.com/specimen/" + simpleBodyFont;
-    document.getElementById("conversation").innerHTML += string1 + string2 + simpleBodyFont + string3 + string4 + "<br><a href='" + bodyFontLink + "'>" + fonts[indexOfMax(values)] +  "</a>" + string5;
+  values[indexOfMax(values)] = 0;
 
-    //Print 1
-      var simpleBodyFont = fontData["name"][fonts[indexOfMax(values)]];
-      var bodyFontLink = "https://fonts.google.com/specimen/" + simpleBodyFont;
-      document.getElementById("conversation").innerHTML += string1 + string2 + simpleBodyFont + string3 + string4 + "<br><a href='" + bodyFontLink + "'>" + fonts[indexOfMax(values)] +  "</a>" + string5;
+  var simpleBodyFont = fontData["name"][fonts[indexOfMax(values)]];
+  var bodyFontLink = "https://fonts.google.com/specimen/" + simpleBodyFont;
+  document.getElementById("conversation").innerHTML += string1 + string2 + simpleBodyFont + string3 + string4 + "<br><a href='" + bodyFontLink + "'>" + fonts[indexOfMax(values)] +  "</a>" + string5;
+
+  values[indexOfMax(values)] = 0;
+
+  var simpleBodyFont = fontData["name"][fonts[indexOfMax(values)]];
+  var bodyFontLink = "https://fonts.google.com/specimen/" + simpleBodyFont;
+  document.getElementById("conversation").innerHTML += string1 + string2 + simpleBodyFont + string3 + string4 + "<br><a href='" + bodyFontLink + "'>" + fonts[indexOfMax(values)] +  "</a>" + string5;
+
+  values[indexOfMax(values)] = 0;
+
+  var simpleBodyFont = fontData["name"][fonts[indexOfMax(values)]];
+  var bodyFontLink = "https://fonts.google.com/specimen/" + simpleBodyFont;
+  document.getElementById("conversation").innerHTML += string1 + string2 + simpleBodyFont + string3 + string4 + "<br><a href='" + bodyFontLink + "'>" + fonts[indexOfMax(values)] +  "</a>" + string5;
+
+  values[indexOfMax(values)] = 0;
+
+  var simpleBodyFont = fontData["name"][fonts[indexOfMax(values)]];
+  var bodyFontLink = "https://fonts.google.com/specimen/" + simpleBodyFont;
+  document.getElementById("conversation").innerHTML += string1 + string2 + simpleBodyFont + string3 + string4 + "<br><a href='" + bodyFontLink + "'>" + fonts[indexOfMax(values)] +  "</a>" + string5;
+
+  values[indexOfMax(values)] = 0;
+
+  var simpleBodyFont = fontData["name"][fonts[indexOfMax(values)]];
+  var bodyFontLink = "https://fonts.google.com/specimen/" + simpleBodyFont;
+  document.getElementById("conversation").innerHTML += string1 + string2 + simpleBodyFont + string3 + string4 + "<br><a href='" + bodyFontLink + "'>" + fonts[indexOfMax(values)] +  "</a>" + string5;
+
+  values[indexOfMax(values)] = 0;
+
+  var simpleBodyFont = fontData["name"][fonts[indexOfMax(values)]];
+  var bodyFontLink = "https://fonts.google.com/specimen/" + simpleBodyFont;
+  document.getElementById("conversation").innerHTML += string1 + string2 + simpleBodyFont + string3 + string4 + "<br><a href='" + bodyFontLink + "'>" + fonts[indexOfMax(values)] +  "</a>" + string5;
+
+  values[indexOfMax(values)] = 0;
+
+  var simpleBodyFont = fontData["name"][fonts[indexOfMax(values)]];
+  var bodyFontLink = "https://fonts.google.com/specimen/" + simpleBodyFont;
+  document.getElementById("conversation").innerHTML += string1 + string2 + simpleBodyFont + string3 + string4 + "<br><a href='" + bodyFontLink + "'>" + fonts[indexOfMax(values)] +  "</a>" + string5;
+
+  values[indexOfMax(values)] = 0;
+
+  var simpleBodyFont = fontData["name"][fonts[indexOfMax(values)]];
+  var bodyFontLink = "https://fonts.google.com/specimen/" + simpleBodyFont;
+  document.getElementById("conversation").innerHTML += string1 + string2 + simpleBodyFont + string3 + string4 + "<br><a href='" + bodyFontLink + "'>" + fonts[indexOfMax(values)] +  "</a>" + string5;
+
+  values[indexOfMax(values)] = 0;
+
+  var simpleBodyFont = fontData["name"][fonts[indexOfMax(values)]];
+  var bodyFontLink = "https://fonts.google.com/specimen/" + simpleBodyFont;
+  document.getElementById("conversation").innerHTML += string1 + string2 + simpleBodyFont + string3 + string4 + "<br><a href='" + bodyFontLink + "'>" + fonts[indexOfMax(values)] +  "</a>" + string5;
+
+  values[indexOfMax(values)] = 0;
+
+  var simpleBodyFont = fontData["name"][fonts[indexOfMax(values)]];
+  var bodyFontLink = "https://fonts.google.com/specimen/" + simpleBodyFont;
+  document.getElementById("conversation").innerHTML += string1 + string2 + simpleBodyFont + string3 + string4 + "<br><a href='" + bodyFontLink + "'>" + fonts[indexOfMax(values)] +  "</a>" + string5;
+
+  values[indexOfMax(values)] = 0;
+
+  var simpleBodyFont = fontData["name"][fonts[indexOfMax(values)]];
+  var bodyFontLink = "https://fonts.google.com/specimen/" + simpleBodyFont;
+  document.getElementById("conversation").innerHTML += string1 + string2 + simpleBodyFont + string3 + string4 + "<br><a href='" + bodyFontLink + "'>" + fonts[indexOfMax(values)] +  "</a>" + string5;
+
+  
 
 }
 
@@ -6616,22 +6629,4 @@ function indexOfMax(arr) {
     }
 
     return maxIndex;
-}
-
-function indexOfMin(arr) {
-    if (arr.length === 0) {
-        return -1;
-    }
-
-    var min = arr[0];
-    var minIndex = 0;
-
-    for (var i = 1; i < arr.length; i++) {
-        if (arr[i] < min) {
-            minIndex = i;
-            min = arr[i];
-        }
-    }
-
-    return minIndex;
 }

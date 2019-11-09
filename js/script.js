@@ -6408,7 +6408,6 @@ var fonts = [
   "Playfair Display Black",
   "Playfair Display Italic",
   "Playfair Display SC Bold Italic",
-  "Press Start 2P",
   "PT Sans Caption",
   "PT Serif Bold Italic",
   "Puritan",
@@ -6505,11 +6504,15 @@ function starThisFont(nameOfFont){
 
 function toggleStarred(){
   var starlist = document.getElementById('starred-font-list');
+
   if (starlist.style.display == 'block') {
     starlist.style.display = 'none';
+    document.getElementById("starred-button").classList.remove("hasfocus");
+    document.getElementById("starred-button").classList.remove("navigation-element-active");
   }
   else{
     starlist.style.display = 'block';
+    document.getElementById("starred-button").classList.add("navigation-element-active");
   }
 }
 

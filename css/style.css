@@ -53,11 +53,19 @@ body{
 	transition: .25s;
 	display: inline-block;
 	cursor: pointer;
+
+	font-family: "Libre Franklin";
+	font-weight: 600;
+	background: #2B2743;
+	border-radius: 6px;
+	padding: 8px 12px 40px 12px;
+	margin: 0;
 }
 
 .navigation-element:hover{
 	opacity: 1;
 	height: 40px;
+	background: #2B2743;
 }
 
  /*
@@ -82,7 +90,7 @@ body{
   transition: all 0.3s ease-in-out 0s;
 }
 
-.navigation-element:hover:before {
+.navigation-element-active:before {
 	opacity: 1;
   visibility: visible;
   -webkit-transform: scaleX(1);

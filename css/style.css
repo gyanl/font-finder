@@ -13,11 +13,13 @@ body{
 }
 
 .header{
+	position:fixed;
 	z-index: 9;
 	background: #2B2743;
 	height: 80px;
 	left: 0;
 	right: 0;
+	top: 0;
 	border-bottom: 1px solid rgba(221, 216, 255, 0.2);
 	display: flex;
 	align-items: center;
@@ -93,6 +95,7 @@ body{
 }
 
 .tag-picker{
+	margin-top: 80px;
 	background: #2B2743;
 	padding: 32px 120px 32px 120px;
 }
@@ -247,7 +250,7 @@ button:active{
 	background: #2B2743;
 	max-height: 80%;
 	overflow-y: scroll;
-	position: absolute;
+	position: fixed;
 	display: none;
 	right: 100px;
 	max-width: 30%;
@@ -262,9 +265,9 @@ button:active{
 	vertical-align: top;
 	text-align: left;
 	width:auto;
-	margin: 10px;
+	margin: 0px 10px 10px 10px;
 	background: #fff;
-	padding: 12px 24px 12px 24px;
+	padding: 12px 24px 28px 24px;
 	border-radius: 8px;
 	border: .5px solid rgba(221,216,255,0.50);
 	color: #333;
@@ -275,6 +278,10 @@ button:active{
 
 .card-starred:last-child {
 	margin-bottom: 2px;
+}
+
+.emptyimage{
+	width: 100%;
 }
 
 @media (max-width:1200px){
@@ -289,6 +296,7 @@ button:active{
 	height: auto;
 	max-width: 100%;
 	right: 0;
+	max-height: 80%;
 }
 
 	.card{

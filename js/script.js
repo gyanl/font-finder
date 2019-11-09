@@ -6469,6 +6469,10 @@ var fonts = [
   "Wellfleet"
 ];
 
+function scrollToTop() {
+window.scrollTo({top: 0, behavior: 'smooth'});
+}
+
 //Function to remove given element from array
 Array.prototype.remove = function() {
       var what, a = arguments, L = a.length, ax;
@@ -6567,7 +6571,14 @@ function printStarredList() {
   list.innerHTML = "";
 
   //for each item in activeAdjectives
-  starredFonts.forEach(printStarredFont);
+  if (starredFonts.length == 0) {
+  list.innerHTML = "<div class='card-starred'> <img class='emptyimage' src='img/no-starred.png'> </div>";
+  }
+
+  else {
+    starredFonts.forEach(printStarredFont);
+  }
+
 }
 
 function printMaxFontInArray(values) {

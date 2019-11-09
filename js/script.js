@@ -6468,6 +6468,35 @@ var fonts = [
   "Wellfleet"
 ];
 
+var pangrams = [
+  "Jim quickly realized that the beautiful gowns are expensive.",
+  "Jackie will budget for the most expensive zoology equipment.",
+  "Zelda might fix the job growth plans very quickly on Monday.",
+  "The wizard quickly jinxed the gnomes before they vaporized.",
+  "All questions asked by five watched experts amaze the judge.",
+  "A quick movement of the enemy will jeopardize six gunboats.",
+  "Just keep examining every low bid quoted for zinc etchings.",
+  "Back in June we delivered oxygen equipment of the same size.",
+  "Grumpy wizards make toxic brew for the evil queen and jack.",
+  "A quivering Texas zombie fought republic linked jewelry.",
+  "Crazy Frederick bought many very exquisite opal jewels.",
+  "Few black taxis drive up major roads on quiet hazy nights.",
+  "Lorem ipsum dolor set amet."
+];
+
+var destiny = [
+  "Long years ago now we made a tryst with destiny, and now the time comes when we shall redeem our pledge, not wholly or in full measure, but very substantially.",
+  "It is fitting that at this solemn moment we take the pledge of dedication to the service of India and her people and to the still larger cause of humanity.",
+  "The achievement we celebrate today is but a step, an opening of opportunity, to the greater triumphs and achievements that await us. Are we brave enough and wise enough to grasp this opportunity and accept the challenge of the future?",
+  "Freedom and power bring responsibility. The responsibility rests upon this assembly, a sovereign body representing the sovereign people of India.",
+  "Before the birth of freedom we have endured all the pains of labour and our hearts are heavy with the memory of this sorrow. Some of those pains continue even now. Nevertheless, the past is over and it is the future that beckons to us now.",
+  "That future is not one of ease or resting but of incessant striving so that we may fulfil the pledges we have so often taken and the one we shall take today.",
+  "The ambition of the greatest man of our generation has been to wipe every tear from every eye. That may be beyond us, but as long as there are tears and suffering, so long our work will not be over.",
+  "Peace has been said to be indivisible; so is freedom, so is prosperity now, and so also is disaster in this one world that can no longer be split into isolated fragments.",
+  "Yet the turning point is past, and history begins anew for us, the history which we shall live and act and others will write about.",
+  "To the nations and people of the world we send greetings and pledge ourselves to cooperate with them in furthering peace, freedom and democracy."
+];
+
 function scrollToTop() {
 window.scrollTo({top: 0, behavior: 'smooth'});
 }
@@ -6551,7 +6580,10 @@ function printStarredFont(item) {
   var string2 = "<div class='fontsample' style='font-family: ";
   //simpleBodyFont
   var string3 = ";'>";
-  var string4 = "Lorem ipsum is boring to read, so how about this paragraph about my favorite color? My favorite color is coral red. It’s sort of like red, sort of like orange, sort of like pink, but not quite any of them.";
+  // var string4 = "Lorem ipsum is boring to read, so how about this paragraph about my favorite color? My favorite color is coral red. It’s sort of like red, sort of like orange, sort of like pink, but not quite any of them.";
+
+  var string4 = pangrams[Math.floor(Math.random()*pangrams.length)] + " " + pangrams[Math.floor(Math.random()*pangrams.length)] + "<p>" + pangrams[Math.floor(Math.random()*pangrams.length)] + " " + pangrams[Math.floor(Math.random()*pangrams.length)];
+
   //<br><a href='bodyFontLink>
   var string5 = "</div></div>";
 
@@ -6591,7 +6623,8 @@ function printMaxFontInArray(values) {
   var string2 = "<div class='fontsample' style='font-family: ";
   //simpleBodyFont
   var string3 = ";'>";
-  var string4 = "Lorem ipsum is boring to read, so how about this paragraph about my favorite color? My favorite color is coral red. It’s sort of like red, sort of like orange, sort of like pink, but not quite any of them.";
+  // var string4 = "Lorem ipsum is boring to read, so how about this paragraph about my favorite color? My favorite color is coral red. It’s sort of like red, sort of like orange, sort of like pink, but not quite any of them.";
+  var string4 = destiny[Math.floor(Math.random()*destiny.length)];
   //<br><a href='bodyFontLink>
   var string5 = "</div></div>";
 

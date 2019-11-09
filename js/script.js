@@ -6542,6 +6542,7 @@ function setActive(feature){
 
       displayFonts();
       console.log(activeAdjectives);
+
 }
 
 function printStarredFont(item) {
@@ -6610,31 +6611,36 @@ function printMaxFontInArray(values) {
 
 function displayFonts() {
   var counter = 0;
-
   document.getElementById("conversation").innerHTML = "";
 
-  for (i = 0; i < fonts.length; i++) {
-    values[i] = 0;
+  if (activeAdjectives.length == 0) {
+    document.getElementById("descriptor").innerHTML = "Nothing to show. Pick a word to get started.";
   }
 
-  //for each item in activeAdjectives
-  activeAdjectives.forEach(function (adjective, index) {
-      for (fontname in fontData[adjective]){
-          values[counter] = parseInt(values[counter]) + parseInt(fontData[adjective][fontname]);
-          counter++;
-      }
-      counter = 0;
-  });
+  else {
+    for (i = 0; i < fonts.length; i++) {
+      values[i] = 0;
+    }
 
-  //console.log(fonts[indexOfMax(values)]);
+    //for each item in activeAdjectives
+    activeAdjectives.forEach(function (adjective, index) {
+        for (fontname in fontData[adjective]){
+            values[counter] = parseInt(values[counter]) + parseInt(fontData[adjective][fontname]);
+            counter++;
+        }
+        counter = 0;
+    });
 
-  document.getElementById("conversation").innerHTML = "";
-  document.getElementById("descriptor").innerHTML = "Showing fonts that are " + activeAdjectives;
+    //console.log(fonts[indexOfMax(values)]);
+
+    document.getElementById("conversation").innerHTML = "";
+    document.getElementById("descriptor").innerHTML = "Showing fonts that are " + activeAdjectives;
 
 
-  for (var i = 0; i < 6; i++) {
-    values[indexOfMax(values)] = 0;
-    printMaxFontInArray(values);
+    for (var i = 0; i < 6; i++) {
+      values[indexOfMax(values)] = 0;
+      printMaxFontInArray(values);
+    }
   }
 }
 

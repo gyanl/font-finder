@@ -6495,12 +6495,12 @@ function starThisFont(nameOfFont){
       starredFonts.push(nameOfFont);
       star.classList.add("starred");
   }
+  printStarredList();
   console.log(starredFonts);
 }
 
 function toggleStarred(){
   var starlist = document.getElementById('starred-font-list');
-
   if (starlist.style.display == 'block') {
     starlist.style.display = 'none';
   }
@@ -6535,6 +6535,39 @@ function setActive(feature){
 
       displayFonts();
       console.log(activeAdjectives);
+}
+
+function printStarredFont(item) {
+
+  var string1 = "<div class='card-starred'>";
+  var string2 = "<div class='fontsample' style='font-family: ";
+  //simpleBodyFont
+  var string3 = ";'>";
+  var string4 = "Lorem ipsum is boring to read, so how about this paragraph about my favorite color? My favorite color is coral red. It’s sort of like red, sort of like orange, sort of like pink, but not quite any of them.";
+  //<br><a href='bodyFontLink>
+  var string5 = "</div></div>";
+
+  var currentFont = item;
+  var simpleBodyFont = fontData["name"][currentFont];
+  var bodyFontLink = "https://fonts.google.com/specimen/" + simpleBodyFont;
+  document.getElementById("starred-font-list").innerHTML += string1 + "<a class='fontname' id='info' href='" + bodyFontLink + "'>" + currentFont +  "</a>" + "<img id='" + currentFont  +"'  onclick='starThisFont(this.id)' class='unstarred' src='img/star-inactive.svg'>" + "<br>" + string2 + simpleBodyFont + string3 + string4 + string5;
+
+  var star = document.getElementById(currentFont);
+
+  if (starredFonts.includes(currentFont) == true) {
+      star.src = "img/star-active.svg";
+      star.classList.add("starred");
+}
+
+}
+function printStarredList() {
+
+  var list = document.getElementById('starred-font-list');
+
+  list.innerHTML = "";
+
+  //for each item in activeAdjectives
+  starredFonts.forEach(printStarredFont);
 }
 
 function printMaxFontInArray(values) {

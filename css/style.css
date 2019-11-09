@@ -180,7 +180,7 @@ button:active{
 }
 
 .card{
-	height: 240px;
+	height: 260px;
 	overflow-y: scroll;
 	display: inline-block;
 	vertical-align: top;
@@ -209,8 +209,10 @@ button:active{
 }
 
 .fontname{
-	line-height: 54px;
+	line-height: 56px;
 	text-decoration: none;
+	color: rgba(43, 39, 67, 0.6);
+	/* color: #FF7760; */
 	display: inline;
 }
 
@@ -234,14 +236,6 @@ button:active{
 	background: #DDD8FF;
 }
 
-#star-in-circle{
-	background: #333;
-}
-
-#circle-for-star{
-		background: #999;
-}
-
 .fontsample{
 	line-height: 1.4;
 	font-size: 20px;
@@ -251,7 +245,7 @@ button:active{
 .starred-font-list{
 	z-index: 10;
 	background: #2B2743;
-	height: 80%;
+	max-height: 80%;
 	overflow-y: scroll;
 	position: absolute;
 	display: none;

@@ -135,25 +135,32 @@ button:active{
 }
 
 .card{
+	height: 200px;
+	overflow-y: scroll;
 	display: inline-block;
 	vertical-align: top;
 	text-align: left;
 	width:27%;
 	margin: 10px;
 	background: #fff;
-	padding: 16px 20px 16px 20px;
+	padding: 20px 24px 20px 24px;
 	border-radius: 8px;
-	border: 1px solid #DDD8FF;
+	border: .5px solid rgba(221,216,255,0.50);
 	color: #333;
 	font-size: 20px;
-	transition: .2s;
+	transition: .1s;
+	box-shadow: 0 1px 1px rgba(221,216,255,0.20),
+						0 2px 2px rgba(221,216,255,0.20),
+						0 4px 4px rgba(221,216,255,0.20),
+						0 6px 8px rgba(221,216,255,0.20),
+						0 8px 16px rgba(221,216,255,0.20);
+	border-bottom: 3px solid rgba(221,216,255,0.25);
+	opacity: .9;
 }
 
 .card:hover{
-	transform: translateY(-4px);
-	padding: 20px 24px 20px 24px;
-	margin: 6px;
-	border-radius: 12px;
+	/* transform: translateY(-4px); */
+	opacity: 1;
 }
 
 .circle{

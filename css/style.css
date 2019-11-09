@@ -39,10 +39,52 @@ body{
 }
 
 .navigation-element{
+	height: 30px;
+	position: relative;
+	text-decoration: none;
 	float: left;
+	opacity: .75;
 	color: #fff;
 	font-weight: 600;
 	font-size: 18px;
+	transition: .25s;
+}
+
+.navigation-element:hover{
+	opacity: 1;
+	height: 40px;
+}
+
+ /*
+ Animated Link Underline from
+ https://tobiasahlin.com/blog/css-trick-animating-link-underlines/
+ */
+
+.navigation-element:before {
+  content: "";
+  position: absolute;
+  width: 105%;
+	border-radius: 4px;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.navigation-element:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.star{
+	transition: .2s;
+	transform: translateY(4px);
 }
 
 .tag-picker{
@@ -345,8 +387,23 @@ d: path("M150,150.3 C157.440006,150.3        167.240006,150.3 179.4,150.3     C1
 		padding: 0;
 	}
 
+button{
+	opacity: 1;
+}
+
 	.results{
 		margin: 16px 4px 16px 4px;
+	}
+
+	.fontsample{
+		line-height: 1.4;
+		font-size: 24px;
+		display: inline-block;
+	}
+
+	.star{
+		transition: .2s;
+		transform: translateY(5px);
 	}
 
 }

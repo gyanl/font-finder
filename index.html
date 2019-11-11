@@ -30,32 +30,8 @@
 
 <body>
 
-<!--
-<div class="topsection">
-  <h2 class="instructions-primary">FontBot</p>
-  <p class="instructions-secondary">Online</p>
-</div>
-
-<div id="conversation" class="fontcard">
-<div class="message-received">
-    Welcome to FontBot! I currently only support two types of responses.
-</div>
-
-
-More gets added here.
-
-
-
-</div>
-
-  <div class="suggestions">
-    <button id="button2" type="button" name="button2" onclick="setBodyFont()">Show me a random font!</button>
-    <button id="button1" type="button" name="button1" onclick="lessOfThis()">Something.</button>
-  </div>
--->
-
 <div class="header">
-  <img class="logo" onclick="scrollToTop()" src="img/ff.svg" alt="">
+  <img class="logo" onclick="deActivateFontDetailsPage()" src="img/ff.svg" alt="">
   <div class="navigation">
     <button id="starred-button" onclick="toggleStarred()" onfocus="showStarred()" class="navigation-element"><img class="star" src="img/star.svg">Starred</button>
   </div>
@@ -65,8 +41,63 @@ More gets added here.
   <div class="card-starred"> <img class="emptyimage" src="img/no-starred.png" alt=""> </div>
 </div>
 
-<div class="tag-picker">
-  <p class="header-caps">Get Started</p>
+<div id="font-page" class="font-page animated fadeInDown">
+    <div class="font-page-left">
+              <div class="header-caps color-orange padding-top-24 clickme" onclick='deActivateFontDetailsPage()'>Back to results</div>
+      <div class="card-fixed-width card-fixed-width-selected">
+        <a class="fontname" id="font-page-name" href="https://fonts.google.com/specimen/Frijole">Frijole</a>
+        <br>
+          <div class="fontsample">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </div>
+      </div>
+        <div id='font-page-similiar' class="header-caps color-dark padding-top-24">Similiar to Frijole</div>
+        <div id="similiar-container" class="similiar-container">
+          <div class="card-fixed-width"><a class="fontname" id="info" href="https://fonts.google.com/specimen/Black Ops One">Black Ops One</a><img id="Black Ops One" onclick="starThisFont(this.id)" class="unstarred" src="img/star-inactive.svg"><br><div class="fontsample" style="font-family: Black Ops One;">That future is not one of ease or resting but of incessant striving so that we may fulfil the pledges we have so often taken and the one we shall take today.</div></div>
+          <div class="card-fixed-width"><a class="fontname" id="info" href="https://fonts.google.com/specimen/Slackey">Slackey</a><img id="Slackey" onclick="starThisFont(this.id)" class="unstarred" src="img/star-inactive.svg"><br><div class="fontsample" style="font-family: Slackey;">That future is not one of ease or resting but of incessant striving so that we may fulfil the pledges we have so often taken and the one we shall take today.</div></div>
+        </div>
+
+    </div>
+  <div class="font-page-right">
+    <p class="header-caps color-dark padding-top-24">Font Preview</p>
+    <div class="select-mode">
+      <div id="select-pairings" onclick="activatePairings()" class="option option-selected">Pairings</div><span class="separator">/</span>
+      <div id="select-book" onclick="activateBook()" class="option">Book</div><span class="separator">/</span>
+      <div id="select-blog" onclick="activateBlog()" class="option">Blog</div><span class="separator">/</span>
+      <div id="select-presentation" onclick="activatePresentation()" class="option">Presentation</div>
+    </div>
+      <div id="pairings" class="preview-pairings">
+        Pairings
+      </div>
+
+      <div id="blog" class="preview-blog">
+        Blog preview
+      </div>
+
+      <div id="book" class="preview-book">
+        <p class="book-title">Metamorphosis</p>
+        <p class="book-subtitle">Franz Kafka</p>
+        <p class="book-para">One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections.</p>
+        <p class="book-para">“What’s happened to me?” he thought. It wasn’t a dream. His room, a proper human room although a little too small, lay peacefully between its four familiar walls. A collection of textile samples lay spread out on the table, and above it there hung a picture.</p>
+        <p class="book-para">It wasn’t a dream. His room, a proper human room although a little too small, lay peacefully between its four familiar walls. A collection of textile samples lay spread out on the table, and above it there hung a picture.</p>
+      </div>
+
+      <div id="presentation" class="preview-presentation">
+        <div class="presentation-text">
+        <p class="presentation-title">Metamorphosis</p>
+        <p class="presentation-points">Franz Kafka</p>
+        </div>
+        <div class="presentation-image">
+          <img src="" alt="">
+          <p>Caption for this image.</p>
+        </div>
+      </div>
+  </div>
+
+</div>
+
+<div id="tag-picker" class="tag-picker">
+  <p class="header-caps color-orange">Get Started</p>
   <p class="instructions">Click on up to 3 adjectives to find fonts.</p>
 
   <div id="adjectives" class="suggestions">
@@ -98,9 +129,9 @@ More gets added here.
 
 
 
-<div class="results-background">
+<div id="results" class="results-background">
 <div class="results">
-    <p class="boldtext" id="descriptor">Nothing to show. Pick a word to get started.</p>
+    <p class="boldtext" id="descriptor">Nothing to show. Pick one of the words above to get started.</p>
 
     <div id="conversation"></div>
 </div>

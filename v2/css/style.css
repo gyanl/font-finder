@@ -126,21 +126,13 @@ body{
 }
 
 .header-caps{
-	font-family: "Libre Franklin", sans-serif;
 	padding-left: 6px;
 	line-height: 22px;
 	font-size: 14px;
 	margin: 0;
+	color: #FF7760;
 	font-weight: 600;
 	text-transform: uppercase;
-}
-
-.color-orange{
-	color: #FF7760;
-}
-
-.color-dark{
-	color: #2B2743;
 }
 
 .instructions{
@@ -222,8 +214,6 @@ button:active{
 }
 
 .card{
-	cursor: pointer;
-	z-index: 1;
 	height: 260px;
 	overflow-y: scroll;
 	display: inline-block;
@@ -255,24 +245,11 @@ button:active{
 }
 
 .card:hover{
+	/* transform: translateY(-4px); */
 	opacity: 1;
-	-webkit-transform: translateY(-2px);
-	    -ms-transform: translateY(-2px);
-	        transform: translateY(-2px);
-}
-
-.card:focus{
-	outline:0;
-}
-
-.card:active{
-	-webkit-transform: translateY(1px);
-	    -ms-transform: translateY(1px);
-	        transform: translateY(1px);
 }
 
 .fontname{
-	font-family: "Libre Franklin", sans-serif;
 	line-height: 56px;
 	text-decoration: none;
 	color: rgba(43, 39, 67, 0.6);
@@ -323,7 +300,7 @@ button:active{
 	display: none;
 	right: 100px;
 	max-width: 30%;
-	border-radius: 0px 0px 8px 4px;
+	border-radius: 0px 0px 4px 4px;
 	border-bottom: 8px solid #2B2743;
 }
 
@@ -354,215 +331,6 @@ button:active{
 .emptyimage{
 	width: 100%;
 }
-
-.animated {
-  -webkit-animation-duration: .2s;
-  animation-duration: .2s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-}
-
-
-@media (print), (prefers-reduced-motion: reduce) {
-  .animated {
-    -webkit-animation-duration: 1ms !important;
-    animation-duration: 1ms !important;
-    -webkit-transition-duration: 1ms !important;
-    transition-duration: 1ms !important;
-    -webkit-animation-iteration-count: 1 !important;
-    animation-iteration-count: 1 !important;
-  }
-}
-
-@-webkit-keyframes fadeInDown {
-  from {
-    opacity: .5;
-    -webkit-transform: translateY(20px);
-    transform: translateY(20px);
-  }
-
-  to {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }
-}
-
-@keyframes fadeInDown {
-  from {
-    opacity: .5;
-    -webkit-transform: translateY(20px);
-    transform: translateY(20px);
-  }
-
-  to {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }
-}
-
-.fadeInDown {
-  -webkit-animation-name: fadeInDown;
-  animation-name: fadeInDown;
-}
-
-.font-page{
-	font-family: Frijole;
-	overflow-y: scroll;
-	display: none;
-	justify-content: space-around;
-	background: #FBFBFF;
-	margin: 80px 0 0 0;
-	opacity: 0;
-}
-
-.font-page-active{
-	display: flex;
-}
-
-.font-page-left{
-	flex: 4 1 0px;
-	padding: 20px 32px 20px 88px;
-	width: auto;
-	float: left;
-}
-
-.font-page-right{
-	flex: 3 1 0px;
-	padding: 20px 80px 20px 20px;
-	width: auto;
-	float: right;
-}
-
-.similiar-container{
-	width:auto;
-	display: flex;
-	flex-wrap: nowrap;
-	flex-direction: column;
-}
-
-.card-fixed-width{
-	z-index: 11;
-	height: auto;
-	vertical-align: top;
-	text-align: left;
-	background: #fff;
-	padding: 12px 32px 36px 32px;
-	margin: 12px 12px 0 0px;
-	border-radius: 8px;
-	color: #333;
-	font-size: 20px;
-	-webkit-transition: .1s;
-	-o-transition: .1s;
-	transition: .1s;
-	border: 1px solid rgba(221,216,255,0.50);
-	border-bottom: 3px solid rgba(221,216,255,0.25);
-}
-
-.card-fixed-width-selected{
-	border: 1px solid rgba(108,99,255,1);
-	border-bottom: 3px solid rgba(108,99,255,1);
-}
-
-.card-fixed-width:hover{
-	border: 1px solid rgba(108,99,255,1);
-	border-bottom: 3px solid rgba(108,99,255,1);
-	-webkit-transform: translateY(-2px);
-	    -ms-transform: translateY(-2px);
-	        transform: translateY(-2px);
-}
-
-.card-fixed-width:focus{
-	outline:0;
-}
-
-.card-fixed-width:active{
-	-webkit-transform: translateY(1px);
-	    -ms-transform: translateY(1px);
-	        transform: translateY(1px);
-}
-
-
-.padding-top-24{
-	padding-top: 24px;
-}
-
-.select-mode{
-	font-family: "Libre Franklin", sans-serif;
-	background: rgba(221, 216, 255, 0.5);
-	border-radius: 6px;
-	padding: 16px 16px 16px 20px;
-	color: #8B88A1;
-	font-size: 14px;
-	font-weight: 600;
-	margin-bottom: 12px;
-	margin-top: 4px;
-}
-
-.option{
-	display: inline-block;
-	cursor: pointer;
-}
-
-.option-selected{
-	color: #2B2743;
-}
-
-.separator{
-	padding-left: 8px;
-	padding-right: 4px;
-	color: rgba(43, 39, 67, 0.75);
-	cursor: default;
-}
-
-.preview-book{
-	display: none;
-	background: #FFFFFF;
-	border: 0.5px solid #2B2743;
-	padding: 60px;
-}
-
-.preview-presentation{
-	display: none;
-	background: #FFFFFF;
-	border: 0.5px solid #2B2743;
-	padding: 60px;
-}
-
-.preview-blog{
-	display: none;
-	background: #FFFFFF;
-	border: 0.5px solid #2B2743;
-	padding: 60px;
-}
-
-.preview-pairings{
-	display: block;
-	background: #FFFFFF;
-	border: 0.5px solid #2B2743;
-	padding: 60px;
-}
-
-.book-title{
-	font-weight: 600;
-	font-size: 28px;
-	line-height: 0.5;
-}
-
-.book-subtitle{
-	font-weight: 300 !important;
-	font-size: 20px;
-	font-style: italic !important;
-	line-height: 0.5;
-	padding-bottom: 40px;
-}
-
-.book-para{
-	font-weight: 400 !important;
-}
-
-
 
 @media (max-width:1200px){
 	.card{

@@ -68,8 +68,20 @@
       <div id="select-presentation" onclick="activatePresentation()" class="option">Presentation</div>
     </div>
       <div id="pairings" class="preview-pairings">
-        Pairings
-      </div>
+          <div id="title-text" contenteditable="true" ondblclick="randomTitle()"  class="pairing-title">This is the title.</div>
+          <div id="body-text" contenteditable="true" ondblclick="randomBody()"  class="pairing-body"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+
+            <div class="whichfont" id="font-pair-text">You are using <span id="title-font-name"></span> with <span id="body-font-name"></span>. <br>Double click on text to change fonts.</div>
+
+            <div class="buttons">
+            <a class="btn-orange" onclick="alignLeft()">Left Align</a>
+            <a class="btn-orange" onclick="alignCenter()">Center Align</i></a>
+            <a class="btn-orange" onclick="alignRight()">Right Align</a>
+    <br>
+            <a class="btn-orange" onclick="setTitleAndBody()"><i data-feather="loader"></i>Randomise Fonts</a>
+            <a class="btn-orange" onclick="switchFonts()"><i data-feather="shuffle"></i>Swap Title & Body</a>
+            </div>
+        </div>
 
       <div id="blog" class="preview-blog">
         <p class="blog-title">5 secrets about Mumbai that will blow your mind!</p>

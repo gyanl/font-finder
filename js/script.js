@@ -7253,6 +7253,8 @@ function activatePresentation(){
 }
 
 function activateFontDetailsPage(fontName){
+  document.getElementById('title-font-name').innerHTML = fontName;
+  document.getElementById('body-font-name').innerHTML = fontName;
   document.getElementById('font-page-name').innerHTML = fontName;
   document.getElementById('font-page-similiar').innerHTML = "Other fonts like " + fontName;
   document.getElementById('font-page').style.fontFamily = fontData["name"][fontName];
@@ -7272,6 +7274,63 @@ function deActivateFontDetailsPage(){
   document.getElementById('results').style.display = "block";
   document.getElementById('tag-picker').style.display = "block";
 }
+
+function alignLeft(){
+  document.getElementById('pairings').style.textAlign = "left";
+}
+
+function alignRight(){
+  document.getElementById('pairings').style.textAlign = "right";
+}
+
+function alignCenter(){
+  document.getElementById('pairings').style.textAlign = "center";
+}
+
+var currentTitle = "";
+var currentBody = "";
+
+function randomTitle(){
+  currentTitle = fonts[Math.floor(Math.random()*fonts.length)];
+  document.getElementById('title-font-name').innerHTML = currentTitle;
+
+  document.getElementById('title-text').style.fontFamily = fontData["name"][currentTitle];
+  document.getElementById('title-text').style.fontWeight = fontWeightData[currentTitle]["weight"];
+  document.getElementById('title-text').style.fontStyle = fontWeightData[currentTitle]["italics"];
+
+}
+
+function randomBody(){
+  currentBody = fonts[Math.floor(Math.random()*fonts.length)];
+  document.getElementById('body-font-name').innerHTML = currentBody;
+
+  document.getElementById('body-text').style.fontFamily = fontData["name"][currentBody];
+  document.getElementById('body-text').style.fontWeight = fontWeightData[currentBody]["weight"];
+  document.getElementById('body-text').style.fontStyle = fontWeightData[currentBody]["italics"];
+}
+
+function setTitleAndBody(){
+  randomTitle();
+  randomBody();
+}
+
+function switchFonts(){
+
+  var temp = currentBody;
+  currentBody = currentTitle;
+  currentTitle = temp;
+  document.getElementById('title-font-name').innerHTML = currentTitle;
+  document.getElementById('body-font-name').innerHTML = currentBody;
+
+  document.getElementById('title-text').style.fontFamily = fontData["name"][currentTitle];
+  document.getElementById('title-text').style.fontWeight = fontWeightData[currentTitle]["weight"];
+  document.getElementById('title-text').style.fontStyle = fontWeightData[currentTitle]["italics"];
+
+  document.getElementById('body-text').style.fontFamily = fontData["name"][currentBody];
+  document.getElementById('body-text').style.fontWeight = fontWeightData[currentBody]["weight"];
+  document.getElementById('body-text').style.fontStyle = fontWeightData[currentBody]["italics"];
+}
+
 
 function displayClosest(currentFont){
   var counter = 0;

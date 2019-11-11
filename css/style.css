@@ -570,6 +570,11 @@ button:active{
 	line-height: 0.5;
 }
 
+.book-para{
+	font-weight: 400;
+	font-size: 16px;
+}
+
 .book-subtitle{
 	font-weight: 300 !important;
 	font-size: 20px;
@@ -648,7 +653,8 @@ height: 40px;
 	border-radius: 4px;
 	text-decoration: none;
 	margin-left: -4px;
-	margin-top: 16px;
+	margin-top: 8px;
+	margin-right: 8px;
 	transition: .2s;
 }
 
@@ -685,6 +691,27 @@ height: 40px;
 .presentation-image-wrapper{
 	width: 80%;
 }
+
+.pairing-title{
+	font-size: 28px;
+	font-weight: bold;
+	font-style: normal;
+}
+
+.pairing-body{
+	font-size: 18px;
+	font-weight: 400;
+	font-style: normal;
+}
+
+.whichfont{
+	margin-top: 40px;
+	font-style: normal;
+	font-family: "Libre Franklin", sans-serif;
+	font-size: 14px;
+	font-weight: 600;
+}
+
 
 @media (max-width:1200px){
 	.card{

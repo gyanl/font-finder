@@ -728,6 +728,10 @@ height: 40px;
 	padding: 32px;
 }
 
+.preview-pairings{
+	padding: 32px;	
+}
+
 .font-page{
 	flex-direction: column;
 }

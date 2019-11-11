@@ -547,7 +547,7 @@ button:active{
 	display: none;
 	background: #FFFFFF;
 	border: 0.5px solid #2B2743;
-	padding: 60px;
+	padding: 20px 20px 28px 60px;
 }
 
 .preview-blog{
@@ -660,12 +660,46 @@ height: 40px;
 	transform: translateY(1px);
 }
 
+.presentation-title{
+	font-size: 32px;
+}
+
+.presentation-points{
+	width: 100%;
+	margin-left: -40px;
+	font-size: 16px;
+}
+
+.presentation-point{
+	padding-bottom: 8px;
+}
+
+.presentation-text{
+	width: 60%;
+}
+
+.presentation-image{
+	width: inherit;
+}
+
+.presentation-image-wrapper{
+	width: 80%;
+}
+
 @media (max-width:1200px){
 	.card{
 		width:38%;
 }
 
 @media (max-width:700px){
+
+.preview-blog{
+	padding: 32px;
+}
+
+.preview-book{
+	padding: 32px;
+}
 
 .font-page{
 	flex-direction: column;

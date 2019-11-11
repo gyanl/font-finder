@@ -7244,7 +7244,7 @@ function activatePresentation(){
   document.getElementById('pairings').style.display = "none";
   document.getElementById('book').style.display = "none";
   document.getElementById('blog').style.display = "none";
-  document.getElementById('presentation').style.display = "block";
+  document.getElementById('presentation').style.display = "flex";
 
   document.getElementById('select-pairings').classList.remove('option-selected');
   document.getElementById('select-book').classList.remove('option-selected');

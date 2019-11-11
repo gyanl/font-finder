@@ -43,12 +43,12 @@
 
 <div id="font-page" class="font-page animated fadeInDown">
     <div class="font-page-left">
-              <div class="header-caps color-orange padding-top-24 clickme" onclick='deActivateFontDetailsPage()'>Back to results</div>
+      <div class="header-caps color-orange padding-top-24 clickme desktop-only" onclick='deActivateFontDetailsPage()'>Back to results</div>
       <div class="card-fixed-width card-fixed-width-selected">
         <div class="fontname" id="font-page-name"></div>
         <br>
           <div class="fontsample">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<p>
+            <p class="desktop-only">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p><p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<p>
               <p><a class="btn-orange" id="get-on-gfonts">Get on Google Fonts</a>
           </div>
       </div>
@@ -60,6 +60,7 @@
 
     </div>
   <div class="font-page-right">
+    <div class="header-caps color-orange padding-top-24 clickme mobile-only" onclick='deActivateFontDetailsPage()'>Back to results</div>
     <p class="header-caps color-dark padding-top-24">Font Preview</p>
     <div class="select-mode">
       <div id="select-pairings" onclick="activatePairings()" class="option option-selected">Pairings</div><span class="separator">/</span>

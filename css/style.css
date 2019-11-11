@@ -712,6 +712,9 @@ height: 40px;
 	font-weight: 600;
 }
 
+.mobile-only{
+	display: none;
+}
 
 @media (max-width:1200px){
 	.card{
@@ -719,6 +722,14 @@ height: 40px;
 }
 
 @media (max-width:700px){
+
+	.mobile-only{
+		display: block;
+	}
+
+	.desktop-only{
+		display: none;
+	}
 
 .preview-blog{
 	padding: 32px;
@@ -729,11 +740,11 @@ height: 40px;
 }
 
 .preview-pairings{
-	padding: 32px;	
+	padding: 32px;
 }
 
 .font-page{
-	flex-direction: column;
+	flex-direction: column-reverse;
 }
 
 .font-page-left{

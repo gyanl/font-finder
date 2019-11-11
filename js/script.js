@@ -7258,6 +7258,7 @@ function activateFontDetailsPage(fontName){
   document.getElementById('font-page').style.fontFamily = fontData["name"][fontName];
   document.getElementById('font-page').style.fontWeight = fontWeightData[fontName]["weight"];
   document.getElementById('font-page').style.fontStyle = fontWeightData[fontName]["italic"];
+  document.getElementById('get-on-gfonts').href = "https://fonts.google.com/specimen/" + fontData["name"][fontName];
   displayClosest(fontName);
 
   document.getElementById('font-page').style.display = "flex";

@@ -140,7 +140,7 @@ body{
 }
 
 .color-dark{
-	color: #2B2743;
+	color: #2B2743 !important;
 }
 
 .instructions{
@@ -571,6 +571,20 @@ button:active{
 
 @media (max-width:700px){
 
+.font-page{
+	flex-direction: column;
+}
+
+.font-page-left{
+	padding: 12px;
+	margin: 0;
+}
+
+.font-page-right{
+	padding: 12px;
+	margin: 0;
+}
+
 .starred-font-list{
 	border-radius: 0;
 	height: auto;
@@ -582,7 +596,7 @@ button:active{
 	.card{
 		height: auto;
 		width: auto;
-		padding: 12px 24px 4px 24px;
+		padding: 12px 24px 32px 24px;
 		margin: 8px 14px 8px 14px;
 }
 

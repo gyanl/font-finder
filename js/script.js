@@ -6291,693 +6291,693 @@ var fontData = {
   }
 };
 var fontWeightData = {
-  "Roboto Condensed Light": {
-    "weight": 300,
-    "italics": ""
-  },
-  "Roboto Light": {
-    "weight": 300,
-    "italics": ""
-  },
-  "Rokkitt Light": {
-    "weight": 300,
-    "italics": ""
-  },
-  "Muli": {
-    "weight": "",
-    "italics": ""
-  },
-  "Marvel Bold": {
-    "weight": 700,
-    "italics": ""
-  },
-  "Signika Light": {
-    "weight": 300,
-    "italics": ""
-  },
-  "Cabin Condensed Medium": {
-    "weight": 500,
-    "italics": ""
-  },
-  "Roboto": {
-    "weight": "",
-    "italics": ""
-  },
-  "Archivo Narrow": {
-    "weight": "",
-    "italics": ""
-  },
-  "Roboto Condensed": {
-    "weight": "",
-    "italics": ""
-  },
-  "Open Sans Condensed Light": {
-    "weight": 300,
-    "italics": ""
-  },
-  "Amethysta": {
-    "weight": "",
-    "italics": ""
-  },
-  "Dosis Light": {
-    "weight": 300,
-    "italics": ""
-  },
-  "Neuton Light": {
-    "weight": 300,
-    "italics": ""
-  },
-  "Muli Light": {
-    "weight": 300,
-    "italics": ""
-  },
-  "Rokkitt": {
-    "weight": "",
-    "italics": ""
-  },
-  "Tinos": {
-    "weight": "",
-    "italics": ""
-  },
-  "Tenor Sans": {
-    "weight": "",
-    "italics": ""
-  },
-  "Inconsolata": {
-    "weight": "",
-    "italics": ""
-  },
-  "GFS Didot": {
-    "weight": "",
-    "italics": ""
-  },
-  "Gentium Basic": {
-    "weight": "",
-    "italics": ""
-  },
-  "Strait": {
-    "weight": "",
-    "italics": ""
-  },
-  "Cabin Condensed": {
-    "weight": "",
-    "italics": ""
-  },
-  "PT Sans Caption": {
-    "weight": "",
-    "italics": ""
-  },
-  "Oswald": {
-    "weight": "",
-    "italics": ""
-  },
-  "Enriqueta": {
-    "weight": "",
-    "italics": ""
-  },
-  "Asap": {
-    "weight": "",
-    "italics": ""
-  },
-  "Ropa Sans": {
-    "weight": "",
-    "italics": ""
-  },
-  "Source Sans Pro Semibold": {
-    "weight": 600,
-    "italics": ""
-  },
-  "Source Sans Pro Light Italic": {
-    "weight": 300,
-    "italics": "italic"
-  },
-  "Ubuntu Condensed": {
-    "weight": "",
-    "italics": ""
-  },
-  "Titillium Web Light Italic": {
-    "weight": 300,
-    "italics": "italic"
-  },
-  "Old Standard TT": {
-    "weight": "",
-    "italics": ""
-  },
-  "Anonymous Pro": {
-    "weight": "",
-    "italics": ""
-  },
-  "Source Code Pro Light": {
-    "weight": 300,
-    "italics": ""
-  },
-  "Francois One": {
-    "weight": "",
-    "italics": ""
-  },
-  "Merriweather": {
-    "weight": "",
-    "italics": ""
-  },
-  "Rambla": {
-    "weight": "",
-    "italics": ""
-  },
-  "Arimo Bold": {
-    "weight": 700,
-    "italics": ""
-  },
-  "Fenix": {
-    "weight": "",
-    "italics": ""
-  },
-  "Roboto Black": {
-    "weight": 900,
-    "italics": ""
-  },
-  "Crimson Text Semibold": {
-    "weight": 600,
-    "italics": ""
-  },
-  "Oranienbaum": {
-    "weight": "",
-    "italics": ""
-  },
-  "Istok Web Bold": {
-    "weight": 700,
-    "italics": ""
-  },
-  "Voltaire": {
-    "weight": "",
-    "italics": ""
-  },
-  "Telex": {
-    "weight": "",
-    "italics": ""
-  },
-  "Philosopher": {
-    "weight": "",
-    "italics": ""
-  },
-  "Raleway Semibold": {
-    "weight": 600,
-    "italics": ""
-  },
-  "Goudy Bookletter 1911": {
-    "weight": "",
-    "italics": ""
-  },
-  "Puritan": {
-    "weight": "",
-    "italics": ""
+  "Acme": {
+    "weight": 400,
+    "italics": "normal"
   },
   "Advent Pro Semibold Italic": {
     "weight": 600,
     "italics": "italic"
   },
-  "IM Fell French Canon": {
-    "weight": "",
-    "italics": ""
-  },
-  "Oswald Bold": {
-    "weight": 700,
-    "italics": ""
-  },
-  "Lekton  Italic": {
-    "weight": 400,
-    "italics": "italic"
-  },
-  "Buenard Bold": {
-    "weight": 700,
-    "italics": ""
-  },
-  "Chivo  Italic": {
-    "weight": 400,
-    "italics": "italic"
-  },
-  "Tinos Bold": {
-    "weight": 700,
-    "italics": ""
-  },
-  "Lato  Italic": {
-    "weight": 400,
-    "italics": "italic"
-  },
-  "Roboto Medium Italic": {
-    "weight": 500,
-    "italics": "italic"
-  },
-  "GFS Neohellenic  Italic": {
-    "weight": 400,
-    "italics": "italic"
-  },
-  "Gentium Basic Bold": {
-    "weight": 700,
-    "italics": ""
-  },
-  "Signika Semibold": {
-    "weight": 600,
-    "italics": ""
-  },
-  "Raleway Bold": {
-    "weight": 700,
-    "italics": ""
-  },
-  "Marvel Bold Italic": {
-    "weight": 700,
-    "italics": "italic"
-  },
-  "Jura Light": {
-    "weight": 300,
-    "italics": ""
-  },
-  "Bentham": {
-    "weight": "",
-    "italics": ""
-  },
-  "Share Bold Italic": {
-    "weight": 700,
-    "italics": "italic"
-  },
-  "Nobile Medium Italic": {
-    "weight": 500,
-    "italics": "italic"
-  },
-  "Share Bold": {
-    "weight": 700,
-    "italics": ""
-  },
-  "Headland One": {
-    "weight": "",
-    "italics": ""
-  },
-  "Cabin Semibold Italic": {
-    "weight": 600,
-    "italics": "italic"
-  },
-  "Josefin Sans  Semibold Italic": {
-    "weight": 600,
-    "italics": "italic"
-  },
-  "Acme": {
-    "weight": "",
-    "italics": ""
-  },
-  "Share Tech": {
-    "weight": "",
-    "italics": ""
-  },
-  "Cantora One": {
-    "weight": "",
-    "italics": ""
-  },
-  "Titillium Web Black": {
-    "weight": 900,
-    "italics": ""
-  },
-  "Rosario Bold": {
-    "weight": 700,
-    "italics": ""
-  },
-  "Source Code Pro Extra Light": {
-    "weight": 200,
-    "italics": ""
-  },
-  "Oldenburg": {
-    "weight": "",
-    "italics": ""
-  },
-  "Economica  Italic": {
-    "weight": 400,
-    "italics": "italic"
-  },
-  "Arimo Bold Italic": {
-    "weight": 700,
-    "italics": "italic"
-  },
-  "Quattrocento Sans": {
-    "weight": "",
-    "italics": ""
-  },
-  "Lato Bold Italic": {
-    "weight": 700,
-    "italics": "italic"
-  },
-  "Averia Libre Light Italic": {
-    "weight": 300,
-    "italics": "italic"
-  },
-  "IM Fell English": {
-    "weight": "",
-    "italics": ""
-  },
-  "Magra Bold": {
-    "weight": 700,
-    "italics": ""
-  },
-  "Arvo  Italic": {
-    "weight": 400,
-    "italics": "italic"
-  },
-  "Merriweather Bold": {
-    "weight": 700,
-    "italics": ""
-  },
-  "Life Savers": {
-    "weight": "",
-    "italics": ""
-  },
-  "Nanum Gothic Coding Bold": {
-    "weight": 700,
-    "italics": ""
-  },
-  "Bubbler One": {
-    "weight": "",
-    "italics": ""
-  },
-  "Ubuntu Mono  Italic": {
-    "weight": 400,
-    "italics": "italic"
-  },
-  "Nobile Medium": {
-    "weight": 500,
-    "italics": ""
-  },
-  "Maven Pro Black": {
-    "weight": 900,
-    "italics": ""
-  },
-  "Source Code Pro Black": {
-    "weight": 900,
-    "italics": ""
-  },
-  "Averia Sans Libre  Italic": {
-    "weight": 400,
-    "italics": "italic"
-  },
-  "Wellfleet": {
-    "weight": "",
-    "italics": ""
-  },
-  "Overlock  Italic": {
-    "weight": 400,
-    "italics": "italic"
-  },
-  "Rationale": {
-    "weight": "",
-    "italics": ""
-  },
-  "Arvo Bold": {
-    "weight": 700,
-    "italics": ""
-  },
-  "Lato Black Italic": {
-    "weight": 900,
-    "italics": "italic"
-  },
-  "Just Another Hand": {
-    "weight": "",
-    "italics": ""
-  },
-  "Bevan": {
-    "weight": "",
-    "italics": ""
-  },
-  "Bowlby One SC": {
-    "weight": "",
-    "italics": ""
-  },
-  "Ubuntu Mono Bold": {
-    "weight": 700,
-    "italics": ""
-  },
-  "Trochut": {
-    "weight": "",
-    "italics": ""
-  },
-  "Ubuntu  Italic": {
-    "weight": 400,
-    "italics": "italic"
-  },
-  "Fredoka One": {
-    "weight": "",
-    "italics": ""
-  },
-  "Fanwood Text": {
-    "weight": "",
-    "italics": ""
-  },
-  "Racing Sans One": {
-    "weight": "",
-    "italics": ""
-  },
-  "Iceland": {
-    "weight": "",
-    "italics": ""
-  },
-  "Stardos Stencil Bold": {
-    "weight": 700,
-    "italics": ""
-  },
-  "Asset": {
-    "weight": "",
-    "italics": ""
-  },
-  "Kelly Slab": {
-    "weight": "",
-    "italics": ""
-  },
-  "Titan One": {
-    "weight": "",
-    "italics": ""
-  },
-  "Press Start 2P": {
-    "weight": "",
-    "italics": ""
-  },
-  "Sigmar One": {
-    "weight": "",
-    "italics": ""
-  },
-  "Ranchers": {
-    "weight": "",
-    "italics": ""
-  },
-  "Averia Serif Libre  Italic": {
-    "weight": 400,
-    "italics": "italic"
-  },
-  "Nova Round": {
-    "weight": "",
-    "italics": ""
-  },
   "Aldrich": {
-    "weight": "",
-    "italics": ""
-  },
-  "Allerta Stencil": {
-    "weight": "",
-    "italics": ""
-  },
-  "Playfair Display Black": {
-    "weight": 900,
-    "italics": ""
-  },
-  "Cardo  Italic": {
     "weight": 400,
-    "italics": "italic"
-  },
-  "Gentium Basic Bold Italic": {
-    "weight": 700,
-    "italics": "italic"
-  },
-  "Milonga": {
-    "weight": "",
-    "italics": ""
-  },
-  "Simonetta": {
-    "weight": "",
-    "italics": ""
-  },
-  "Paprika": {
-    "weight": "",
-    "italics": ""
-  },
-  "Arvo Bold Italic": {
-    "weight": 700,
-    "italics": "italic"
-  },
-  "Syncopate Bold": {
-    "weight": 700,
-    "italics": ""
-  },
-  "PT Serif Bold Italic": {
-    "weight": 700,
-    "italics": "italic"
-  },
-  "Trochut  Italic": {
-    "weight": 400,
-    "italics": "italic"
-  },
-  "Modern Antiqua": {
-    "weight": "",
-    "italics": ""
-  },
-  "Orbitron Medium": {
-    "weight": 500,
-    "italics": ""
-  },
-  "Black Ops One": {
-    "weight": "",
-    "italics": ""
-  },
-  "Megrim": {
-    "weight": "",
-    "italics": ""
-  },
-  "Cantarell Bold Italic": {
-    "weight": 700,
-    "italics": "italic"
-  },
-  "Smokum": {
-    "weight": "",
-    "italics": ""
-  },
-  "Satisfy": {
-    "weight": "",
-    "italics": ""
-  },
-  "Montez": {
-    "weight": "",
-    "italics": ""
-  },
-  "Redressed": {
-    "weight": "",
-    "italics": ""
+    "italics": "normal"
   },
   "Alegreya Bold Italic": {
     "weight": 700,
     "italics": "italic"
   },
+  "Allerta Stencil": {
+    "weight": 400,
+    "italics": "normal"
+  },
+  "Amethysta": {
+    "weight": 400,
+    "italics": "normal"
+  },
+  "Anonymous Pro": {
+    "weight": 400,
+    "italics": "normal"
+  },
+  "Archivo Narrow": {
+    "weight": 400,
+    "italics": "normal"
+  },
+  "Arimo Bold": {
+    "weight": 700,
+    "italics": "normal"
+  },
+  "Arimo Bold Italic": {
+    "weight": 700,
+    "italics": "italic"
+  },
+  "Arizonia": {
+    "weight": 400,
+    "italics": "normal"
+  },
+  "Arvo Italic": {
+    "weight": 400,
+    "italics": "italic"
+  },
+  "Arvo Bold": {
+    "weight": 700,
+    "italics": "normal"
+  },
+  "Arvo Bold Italic": {
+    "weight": 700,
+    "italics": "italic"
+  },
+  "Asap": {
+    "weight": 400,
+    "italics": "normal"
+  },
+  "Asset": {
+    "weight": 400,
+    "italics": "normal"
+  },
+  "Astloch Bold": {
+    "weight": 700,
+    "italics": "normal"
+  },
+  "Averia Libre Light Italic": {
+    "weight": 300,
+    "italics": "italic"
+  },
+  "Averia Sans Libre Italic": {
+    "weight": 400,
+    "italics": "italic"
+  },
+  "Averia Serif Libre Italic": {
+    "weight": 400,
+    "italics": "italic"
+  },
+  "Bad Script": {
+    "weight": 400,
+    "italics": "normal"
+  },
+  "Bentham": {
+    "weight": 400,
+    "italics": "normal"
+  },
+  "Bevan": {
+    "weight": 400,
+    "italics": "normal"
+  },
+  "Bilbo Swash Caps": {
+    "weight": 400,
+    "italics": "normal"
+  },
+  "Black Ops One": {
+    "weight": 400,
+    "italics": "normal"
+  },
+  "Bowlby One SC": {
+    "weight": 400,
+    "italics": "normal"
+  },
+  "Bubbler One": {
+    "weight": 400,
+    "italics": "normal"
+  },
+  "Buenard Bold": {
+    "weight": 700,
+    "italics": "normal"
+  },
+  "Cabin Condensed": {
+    "weight": 400,
+    "italics": "normal"
+  },
+  "Cabin Condensed Medium": {
+    "weight": 500,
+    "italics": "normal"
+  },
+  "Cabin Semibold Italic": {
+    "weight": 600,
+    "italics": "italic"
+  },
+  "Cantarell Bold Italic": {
+    "weight": 700,
+    "italics": "italic"
+  },
+  "Cantora One": {
+    "weight": 400,
+    "italics": "normal"
+  },
+  "Cardo Italic": {
+    "weight": 400,
+    "italics": "italic"
+  },
+  "Chivo Italic": {
+    "weight": 400,
+    "italics": "italic"
+  },
+  "Clicker Script": {
+    "weight": 400,
+    "italics": "normal"
+  },
   "Crimson Text Bold Italic": {
     "weight": 700,
     "italics": "italic"
   },
-  "Rosarivo  Italic": {
+  "Crimson Text Semibold": {
+    "weight": 600,
+    "italics": "normal"
+  },
+  "Damion": {
+    "weight": 400,
+    "italics": "normal"
+  },
+  "Dosis Light": {
+    "weight": 300,
+    "italics": "normal"
+  },
+  "Eagle Lake": {
+    "weight": 400,
+    "italics": "normal"
+  },
+  "Economica Italic": {
     "weight": 400,
     "italics": "italic"
   },
-  "Sacramento": {
-    "weight": "",
-    "italics": ""
+  "Emblema One": {
+    "weight": 400,
+    "italics": "normal"
   },
-  "Eagle Lake": {
-    "weight": "",
-    "italics": ""
+  "Enriqueta": {
+    "weight": 400,
+    "italics": "normal"
   },
-  "Niconne": {
-    "weight": "",
-    "italics": ""
+  "Fanwood Text": {
+    "weight": 400,
+    "italics": "normal"
   },
-  "Orbitron Black": {
-    "weight": 900,
-    "italics": ""
+  "Fenix": {
+    "weight": 400,
+    "italics": "normal"
+  },
+  "Finger Paint": {
+    "weight": 400,
+    "italics": "normal"
+  },
+  "Francois One": {
+    "weight": 400,
+    "italics": "normal"
+  },
+  "Fredoka One": {
+    "weight": 400,
+    "italics": "normal"
+  },
+  "Frijole": {
+    "weight": 400,
+    "italics": "normal"
+  },
+  "Gentium Basic": {
+    "weight": 400,
+    "italics": "normal"
+  },
+  "Gentium Basic Bold": {
+    "weight": 700,
+    "italics": "normal"
+  },
+  "Gentium Basic Bold Italic": {
+    "weight": 700,
+    "italics": "italic"
+  },
+  "GFS Didot": {
+    "weight": 400,
+    "italics": "normal"
+  },
+  "GFS Neohellenic Italic": {
+    "weight": 400,
+    "italics": "italic"
+  },
+  "Goudy Bookletter 1911": {
+    "weight": 400,
+    "italics": "normal"
+  },
+  "Great Vibes": {
+    "weight": 400,
+    "italics": "normal"
+  },
+  "Headland One": {
+    "weight": 400,
+    "italics": "normal"
+  },
+  "Iceland": {
+    "weight": 400,
+    "italics": "normal"
+  },
+  "IM Fell English": {
+    "weight": 400,
+    "italics": "normal"
+  },
+  "IM Fell French Canon": {
+    "weight": 400,
+    "italics": "normal"
+  },
+  "Inconsolata": {
+    "weight": 400,
+    "italics": "normal"
+  },
+  "Istok Web Bold": {
+    "weight": 700,
+    "italics": "normal"
+  },
+  "Josefin Sans Semibold Italic": {
+    "weight": 600,
+    "italics": "italic"
+  },
+  "Julee": {
+    "weight": 400,
+    "italics": "normal"
+  },
+  "Jura Light": {
+    "weight": 300,
+    "italics": "normal"
+  },
+  "Just Another Hand": {
+    "weight": 400,
+    "italics": "normal"
+  },
+  "Kelly Slab": {
+    "weight": 400,
+    "italics": "normal"
   },
   "Kenia": {
-    "weight": "",
-    "italics": ""
+    "weight": 400,
+    "italics": "normal"
   },
-  "Emblema One": {
-    "weight": "",
-    "italics": ""
+  "Lato Italic": {
+    "weight": 400,
+    "italics": "italic"
+  },
+  "Lato Black Italic": {
+    "weight": 900,
+    "italics": "italic"
+  },
+  "Lato Bold Italic": {
+    "weight": 700,
+    "italics": "italic"
+  },
+  "Lekton Italic": {
+    "weight": 400,
+    "italics": "italic"
+  },
+  "Life Savers": {
+    "weight": 400,
+    "italics": "normal"
+  },
+  "Lobster": {
+    "weight": 400,
+    "italics": "normal"
+  },
+  "Lobster Two Italic": {
+    "weight": 400,
+    "italics": "italic"
   },
   "Lora Bold Italic": {
     "weight": 700,
     "italics": "italic"
   },
-  "Playfair Display  Italic": {
-    "weight": 400,
-    "italics": "italic"
-  },
-  "Julee": {
-    "weight": "",
-    "italics": ""
-  },
-  "Parisienne": {
-    "weight": "",
-    "italics": ""
-  },
-  "Original Surfer": {
-    "weight": "",
-    "italics": ""
-  },
-  "Damion": {
-    "weight": "",
-    "italics": ""
-  },
-  "Slackey": {
-    "weight": "",
-    "italics": ""
-  },
-  "Sevillana": {
-    "weight": "",
-    "italics": ""
-  },
-  "Lobster Two  Italic": {
-    "weight": 400,
-    "italics": "italic"
+  "Magra Bold": {
+    "weight": 700,
+    "italics": "normal"
   },
   "Marck Script": {
-    "weight": "",
-    "italics": ""
+    "weight": 400,
+    "italics": "normal"
   },
-  "Bad Script": {
-    "weight": "",
-    "italics": ""
+  "Marvel Bold": {
+    "weight": 700,
+    "italics": "normal"
   },
-  "Frijole": {
-    "weight": "",
-    "italics": ""
+  "Marvel Bold Italic": {
+    "weight": 700,
+    "italics": "italic"
   },
-  "Clicker Script": {
-    "weight": "",
-    "italics": ""
+  "Maven Pro Black": {
+    "weight": 900,
+    "italics": "normal"
   },
-  "Finger Paint": {
-    "weight": "",
-    "italics": ""
+  "Megrim": {
+    "weight": 400,
+    "italics": "normal"
   },
-  "Bilbo Swash Caps": {
-    "weight": "",
-    "italics": ""
+  "Merriweather": {
+    "weight": 400,
+    "italics": "normal"
   },
-  "Arizonia": {
-    "weight": "",
-    "italics": ""
+  "Merriweather Bold": {
+    "weight": 700,
+    "italics": "normal"
   },
-  "Great Vibes": {
-    "weight": "",
-    "italics": ""
+  "Milonga": {
+    "weight": 400,
+    "italics": "normal"
   },
-  "Lobster": {
-    "weight": "",
-    "italics": ""
+  "Modern Antiqua": {
+    "weight": 400,
+    "italics": "normal"
+  },
+  "Montez": {
+    "weight": 400,
+    "italics": "normal"
+  },
+  "Muli": {
+    "weight": 400,
+    "italics": "normal"
+  },
+  "Muli Light": {
+    "weight": 300,
+    "italics": "normal"
+  },
+  "Nanum Gothic Coding Bold": {
+    "weight": 700,
+    "italics": "normal"
+  },
+  "Neuton Light": {
+    "weight": 300,
+    "italics": "normal"
+  },
+  "Niconne": {
+    "weight": 400,
+    "italics": "normal"
+  },
+  "Nobile Medium": {
+    "weight": 500,
+    "italics": "normal"
+  },
+  "Nobile Medium Italic": {
+    "weight": 500,
+    "italics": "italic"
+  },
+  "Nova Round": {
+    "weight": 400,
+    "italics": "normal"
+  },
+  "Old Standard TT": {
+    "weight": 400,
+    "italics": "normal"
+  },
+  "Oldenburg": {
+    "weight": 400,
+    "italics": "normal"
+  },
+  "Open Sans Condensed Light": {
+    "weight": 300,
+    "italics": "normal"
+  },
+  "Oranienbaum": {
+    "weight": 400,
+    "italics": "normal"
+  },
+  "Orbitron Black": {
+    "weight": 900,
+    "italics": "normal"
+  },
+  "Orbitron Medium": {
+    "weight": 500,
+    "italics": "normal"
+  },
+  "Original Surfer": {
+    "weight": 400,
+    "italics": "normal"
+  },
+  "Oswald": {
+    "weight": 400,
+    "italics": "normal"
+  },
+  "Oswald Bold": {
+    "weight": 700,
+    "italics": "normal"
+  },
+  "Overlock Italic": {
+    "weight": 400,
+    "italics": "italic"
+  },
+  "Paprika": {
+    "weight": 400,
+    "italics": "normal"
+  },
+  "Parisienne": {
+    "weight": 400,
+    "italics": "normal"
   },
   "Passero One": {
-    "weight": "",
-    "italics": ""
+    "weight": 400,
+    "italics": "normal"
+  },
+  "Philosopher": {
+    "weight": 400,
+    "italics": "normal"
+  },
+  "Playfair Display Italic": {
+    "weight": 400,
+    "italics": "italic"
+  },
+  "Playfair Display Black": {
+    "weight": 900,
+    "italics": "normal"
   },
   "Playfair Display SC Bold Italic": {
     "weight": 700,
     "italics": "italic"
   },
-  "Sonsie One": {
-    "weight": "",
-    "italics": ""
+  "Press Start 2P": {
+    "weight": 400,
+    "italics": "normal"
   },
-  "Astloch Bold": {
+  "PT Sans Caption": {
+    "weight": 400,
+    "italics": "normal"
+  },
+  "PT Serif Bold Italic": {
     "weight": 700,
-    "italics": ""
+    "italics": "italic"
+  },
+  "Puritan": {
+    "weight": 400,
+    "italics": "normal"
+  },
+  "Quattrocento Sans": {
+    "weight": 400,
+    "italics": "normal"
+  },
+  "Racing Sans One": {
+    "weight": 400,
+    "italics": "normal"
+  },
+  "Raleway Bold": {
+    "weight": 700,
+    "italics": "normal"
+  },
+  "Raleway Semibold": {
+    "weight": 600,
+    "italics": "normal"
+  },
+  "Rambla": {
+    "weight": 400,
+    "italics": "normal"
+  },
+  "Ranchers": {
+    "weight": 400,
+    "italics": "normal"
+  },
+  "Rationale": {
+    "weight": 400,
+    "italics": "normal"
+  },
+  "Redressed": {
+    "weight": 400,
+    "italics": "normal"
+  },
+  "Roboto": {
+    "weight": 400,
+    "italics": "normal"
+  },
+  "Roboto Black": {
+    "weight": 900,
+    "italics": "normal"
+  },
+  "Roboto Condensed": {
+    "weight": 400,
+    "italics": "normal"
+  },
+  "Roboto Condensed Light": {
+    "weight": 300,
+    "italics": "normal"
+  },
+  "Roboto Light": {
+    "weight": 300,
+    "italics": "normal"
+  },
+  "Roboto Medium Italic": {
+    "weight": 500,
+    "italics": "italic"
+  },
+  "Rokkitt": {
+    "weight": 400,
+    "italics": "normal"
+  },
+  "Rokkitt Light": {
+    "weight": 300,
+    "italics": "normal"
+  },
+  "Ropa Sans": {
+    "weight": 400,
+    "italics": "normal"
+  },
+  "Rosario Bold": {
+    "weight": 700,
+    "italics": "normal"
+  },
+  "Rosarivo Italic": {
+    "weight": 400,
+    "italics": "italic"
+  },
+  "Sacramento": {
+    "weight": 400,
+    "italics": "normal"
+  },
+  "Satisfy": {
+    "weight": 400,
+    "italics": "normal"
+  },
+  "Sevillana": {
+    "weight": 400,
+    "italics": "normal"
+  },
+  "Share Bold": {
+    "weight": 700,
+    "italics": "normal"
+  },
+  "Share Bold Italic": {
+    "weight": 700,
+    "italics": "italic"
+  },
+  "Share Tech": {
+    "weight": 400,
+    "italics": "normal"
+  },
+  "Sigmar One": {
+    "weight": 400,
+    "italics": "normal"
+  },
+  "Signika Light": {
+    "weight": 300,
+    "italics": "normal"
+  },
+  "Signika Semibold": {
+    "weight": 600,
+    "italics": "normal"
+  },
+  "Simonetta": {
+    "weight": 400,
+    "italics": "normal"
+  },
+  "Slackey": {
+    "weight": 400,
+    "italics": "normal"
+  },
+  "Smokum": {
+    "weight": 400,
+    "italics": "normal"
+  },
+  "Sonsie One": {
+    "weight": 400,
+    "italics": "normal"
+  },
+  "Source Code Pro Black": {
+    "weight": 900,
+    "italics": "normal"
+  },
+  "Source Code Pro Extra Light": {
+    "weight": 200,
+    "italics": "normal"
+  },
+  "Source Code Pro Light": {
+    "weight": 300,
+    "italics": "normal"
+  },
+  "Source Sans Pro Light Italic": {
+    "weight": 300,
+    "italics": "italic"
+  },
+  "Source Sans Pro Semibold": {
+    "weight": 600,
+    "italics": "normal"
+  },
+  "Stardos Stencil Bold": {
+    "weight": 700,
+    "italics": "normal"
+  },
+  "Strait": {
+    "weight": 400,
+    "italics": "normal"
+  },
+  "Syncopate Bold": {
+    "weight": 700,
+    "italics": "normal"
+  },
+  "Telex": {
+    "weight": 400,
+    "italics": "normal"
+  },
+  "Tenor Sans": {
+    "weight": 400,
+    "italics": "normal"
+  },
+  "Tinos": {
+    "weight": 400,
+    "italics": "normal"
+  },
+  "Tinos Bold": {
+    "weight": 700,
+    "italics": "normal"
+  },
+  "Titan One": {
+    "weight": 400,
+    "italics": "normal"
+  },
+  "Titillium Web Black": {
+    "weight": 900,
+    "italics": "normal"
+  },
+  "Titillium Web Light Italic": {
+    "weight": 300,
+    "italics": "italic"
+  },
+  "Trochut": {
+    "weight": 400,
+    "italics": "normal"
+  },
+  "Trochut Italic": {
+    "weight": 400,
+    "italics": "italic"
+  },
+  "Ubuntu Italic": {
+    "weight": 400,
+    "italics": "italic"
+  },
+  "Ubuntu Condensed": {
+    "weight": 400,
+    "italics": "normal"
+  },
+  "Ubuntu Mono Italic": {
+    "weight": 400,
+    "italics": "italic"
+  },
+  "Ubuntu Mono Bold": {
+    "weight": 700,
+    "italics": "normal"
+  },
+  "Voltaire": {
+    "weight": 400,
+    "italics": "normal"
+  },
+  "Wellfleet": {
+    "weight": 400,
+    "italics": "normal"
   }
 };
 
@@ -7257,7 +7257,7 @@ function activateFontDetailsPage(fontName){
   document.getElementById('font-page-similiar').innerHTML = "Other fonts like " + fontName;
   document.getElementById('font-page').style.fontFamily = fontData["name"][fontName];
   document.getElementById('font-page').style.fontWeight = fontWeightData[fontName]["weight"];
-  document.getElementById('font-page').style.fontStyle = fontWeightData[fontName]["italic"];
+  document.getElementById('font-page').style.fontStyle = fontWeightData[fontName]["italics"];
   document.getElementById('get-on-gfonts').href = "https://fonts.google.com/specimen/" + fontData["name"][fontName];
   displayClosest(fontName);
 
@@ -7411,9 +7411,8 @@ function printStarredList() {
 
 function printMaxFontInArray(values) {
 
-  var string1 = "<div onclick='activateFontDetailsPage(\"";
-  var string1extra ="\")' class='card'>";
-  var string2 = "<div class='fontsample' style='font-family: ";
+  var string1 = "<div class='card'>";
+  var string2 = "<div class='fontsample' style='font-family:\"";
   //simpleBodyFont
   var string3 = ";'>";
   // var string4 = "Lorem ipsum is boring to read, so how about this paragraph about my favorite color? My favorite color is coral red. It’s sort of like red, sort of like orange, sort of like pink, but not quite any of them.";
@@ -7424,7 +7423,10 @@ function printMaxFontInArray(values) {
   var currentFont = fonts[indexOfMax(values)];
   var simpleBodyFont = fontData["name"][currentFont];
   var bodyFontLink = "https://fonts.google.com/specimen/" + simpleBodyFont;
-  document.getElementById("conversation").innerHTML += string1 + currentFont + string1extra + "<a class='fontname' id='info' href='" + bodyFontLink + "'>" + currentFont +  "</a>" + "<img id='" + currentFont  +"'  onclick='starThisFont(this.id)' class='unstarred' src='img/star-inactive.svg'>" + "<br>" + string2 + simpleBodyFont + string3 + string4 + string5;
+  // document.getElementById("conversation").innerHTML += string1 + "<a class='fontname' id='info' onclick='activateFontDetailsPage(\"" + currentFont + "\")'>" + currentFont +  "</a>" + "<img id='" + currentFont  +"'  onclick='starThisFont(this.id)' class='unstarred' src='img/star-inactive.svg'>" + "<br>" + string2 + simpleBodyFont + "\"; font-weight: " + "; font-style: "  + string3 + string4 + string5;
+  document.getElementById("conversation").innerHTML += string1 + "<a class='fontname' id='info' onclick='activateFontDetailsPage(\"" + currentFont + "\")'>" + currentFont +  "</a>" + "<img id='" + currentFont  +"'  onclick='starThisFont(this.id)' class='unstarred' src='img/star-inactive.svg'>" + "<br>" + string2 + simpleBodyFont + "\"; font-weight: " + fontWeightData[currentFont]["weight"] + "; font-style: " + fontWeightData[currentFont]["italics"] + string3 + string4 + string5;
+
+
 
   var star = document.getElementById(currentFont);
 
@@ -7437,8 +7439,7 @@ function printMaxFontInArray(values) {
 
 function printMinFontInArray(values) {
 
-  var string1 = "<div onclick='activateFontDetailsPage(\"";
-  var string1extra ="\")' class='card-fixed-width'>";
+  var string1 = "<div class='card-fixed-width'>";
   var string2 = "<div class='fontsample' style='font-family: ";
   //simpleBodyFont
   var string3 = ";'>";
@@ -7450,7 +7451,7 @@ function printMinFontInArray(values) {
   var currentFont = fonts[indexOfMin(values)];
   var simpleBodyFont = fontData["name"][currentFont];
   var bodyFontLink = "https://fonts.google.com/specimen/" + simpleBodyFont;
-  document.getElementById("similiar-container").innerHTML += string1 + currentFont + string1extra + "<a class='fontname' id='info' href='" + bodyFontLink + "'>" + currentFont +  "</a>" + "<img id='" + currentFont  +"'  onclick='starThisFont(this.id)' class='unstarred' src='img/star-inactive.svg'>" + "<br>" + string2 + simpleBodyFont + string3 + string4 + string5;
+  document.getElementById("similiar-container").innerHTML += string1 + "<a class='fontname' id='info' onclick='activateFontDetailsPage(\"" + currentFont + "\")'>" + currentFont +  "</a>" + "<img id='" + currentFont  +"'  onclick='starThisFont(this.id)' class='unstarred' src='img/star-inactive.svg'>" + "<br>" + string2 + simpleBodyFont + string3 + string4 + string5;
 
   var star = document.getElementById(currentFont);
 
@@ -7487,8 +7488,17 @@ function displayFonts() {
     //console.log(fonts[indexOfMax(values)]);
 
     document.getElementById("conversation").innerHTML = "";
-    document.getElementById("descriptor").innerHTML = "Showing fonts that are " + activeAdjectives;
+    document.getElementById("descriptor").innerHTML = "Showing fonts that are ";
 
+    if (activeAdjectives.length == 1) {
+      document.getElementById("descriptor").innerHTML += activeAdjectives[0] + ".";
+    }
+    else if (activeAdjectives.length == 2) {
+      document.getElementById("descriptor").innerHTML += activeAdjectives[1] + " and " + activeAdjectives[0] + ".";
+    }
+    else if (activeAdjectives.length == 3) {
+      document.getElementById("descriptor").innerHTML += activeAdjectives[2] + ", " + activeAdjectives[1] + " and " + activeAdjectives[0] + ".";
+    }
 
     for (var i = 0; i < 6; i++) {
       values[indexOfMax(values)] = 0;

@@ -7204,52 +7204,23 @@ Array.prototype.remove = function() {
       return this;
 };
 
-function activatePairings(){
-  document.getElementById('pairings').style.display = "block";
+function activate(current){
+  document.getElementById('waterfall').style.display = "none";
   document.getElementById('book').style.display = "none";
   document.getElementById('blog').style.display = "none";
   document.getElementById('presentation').style.display = "none";
-
-  document.getElementById('select-pairings').classList.add('option-selected');
-  document.getElementById('select-book').classList.remove('option-selected');
-  document.getElementById('select-blog').classList.remove('option-selected');
-  document.getElementById('select-presentation').classList.remove('option-selected');
-}
-
-function activateBook(){
   document.getElementById('pairings').style.display = "none";
-  document.getElementById('book').style.display = "block";
-  document.getElementById('blog').style.display = "none";
-  document.getElementById('presentation').style.display = "none";
 
-  document.getElementById('select-pairings').classList.remove('option-selected');
-  document.getElementById('select-book').classList.add('option-selected');
-  document.getElementById('select-blog').classList.remove('option-selected');
-  document.getElementById('select-presentation').classList.remove('option-selected');
-}
+  document.getElementById(current).style.display = "block";
 
-function activateBlog(){
-  document.getElementById('pairings').style.display = "none";
-  document.getElementById('book').style.display = "none";
-  document.getElementById('blog').style.display = "block";
-  document.getElementById('presentation').style.display = "none";
-
-  document.getElementById('select-pairings').classList.remove('option-selected');
-  document.getElementById('select-book').classList.remove('option-selected');
-  document.getElementById('select-blog').classList.add('option-selected');
-  document.getElementById('select-presentation').classList.remove('option-selected');
-}
-
-function activatePresentation(){
-  document.getElementById('pairings').style.display = "none";
-  document.getElementById('book').style.display = "none";
-  document.getElementById('blog').style.display = "none";
-  document.getElementById('presentation').style.display = "flex";
-
+  document.getElementById('select-waterfall').classList.remove('option-selected');
   document.getElementById('select-pairings').classList.remove('option-selected');
   document.getElementById('select-book').classList.remove('option-selected');
   document.getElementById('select-blog').classList.remove('option-selected');
-  document.getElementById('select-presentation').classList.add('option-selected');
+  document.getElementById('select-presentation').classList.remove('option-selected');
+
+  var temp = 'select-' + current;
+  document.getElementById(temp).classList.add('option-selected');
 }
 
 function activateFontDetailsPage(fontName){

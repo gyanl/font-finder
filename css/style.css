@@ -130,7 +130,7 @@ body{
 	font-family: "Libre Franklin", sans-serif;
 	padding-left: 6px;
 	line-height: 22px;
-	font-size: 14px;
+	font-size: 12px;
 	margin: 0;
 	font-weight: 600;
 	text-transform: uppercase;
@@ -148,10 +148,14 @@ body{
 	padding-left: 6px;
 	padding-bottom: 8px;
 	margin: 0;
+	width: auto;
 	text-align: left;
 	color: #fff;
 	line-height: 24px;
-	font-size: 18px;
+	font-size: 20px;
+	font-family: "Libre Franklin", sans-serif;
+	font-style: normal;
+	font-weight: 600;
 }
 
 .suggestions{
@@ -421,7 +425,7 @@ button:active{
 	overflow-y: scroll;
 	display: none;
 	justify-content: space-around;
-	background: #FBFBFF;
+	background: #35314D;
 	margin: 80px 0 0 0;
 	opacity: 0;
 }
@@ -508,32 +512,86 @@ button:active{
 }
 
 .select-mode{
+	display: flex;
+	justify-content:flex-start;
 	font-family: "Libre Franklin", sans-serif;
-	background: rgba(221, 216, 255, 0.5);
-	border-radius: 6px;
-	padding: 16px 16px 16px 20px;
 	color: #8B88A1;
 	font-size: 14px;
 	font-weight: 600;
-	margin-bottom: 12px;
-	margin-top: 4px;
+	margin-bottom: 16px;
+	margin-top: 20px;
 	font-style: normal;
 }
 
-.option{
-	display: inline-block;
+.back-arrow{
+	display: inline;
+	padding-left: 4px;
+}
+
+.clickme{
+	margin-left: -22px;
 	cursor: pointer;
+	border-radius: 60px;
+	width: auto;
+	padding: 8px;
+}
+
+.clickme:hover{
+	background-color: rgba(255, 255, 255, 0.1);
+}
+
+.hover-left4{
+	transform: translateX(0);
+	transition: .2s;
+}
+
+.hover-left4:hover{
+	transform: translateX(-4px);
+}
+
+
+.option{
+	position: relative;
+	cursor: pointer;
+	padding: 0px 10px 10px 10px;
+	margin-right: 12px;
+	transition: .2s;
+	border-bottom: 2px solid #35314D;
+	opacity: .9;
+}
+
+.option:hover{
+	opacity: 1;
+}
+
+.option:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+	border-radius: 4px;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #FFFFFF;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+      transform: scaleX(0);
+  -webkit-transition: all 0.2s ease-in-out 0s;
+  -o-transition: all 0.2s ease-in-out 0s;
+  transition: all 0.2s ease-in-out 0s;
 }
 
 .option-selected{
-	color: #2B2743;
+	color: #FFFFFF;
 }
 
-.separator{
-	padding-left: 8px;
-	padding-right: 4px;
-	color: rgba(43, 39, 67, 0.75);
-	cursor: default;
+.option-selected:before {
+	opacity: 1;
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  -ms-transform: scaleX(1);
+      transform: scaleX(1);
 }
 
 .preview-book{
@@ -731,6 +789,18 @@ height: 40px;
 		display: none;
 	}
 
+.option{
+		padding: 0px 2px 10px 2px;
+}
+
+.clickme{
+	margin-left: 0px;
+	cursor: pointer;
+	border-radius: 60px;
+	width: auto;
+	padding: 8px;
+}
+
 .preview-blog{
 	padding: 32px;
 }
@@ -744,7 +814,7 @@ height: 40px;
 }
 
 .font-page{
-	flex-direction: column-reverse;
+	flex-direction: column;
 }
 
 .font-page-left{

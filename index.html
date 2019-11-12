@@ -42,32 +42,20 @@
 </div>
 
 <div id="font-page" class="font-page animated fadeInDown">
-    <div class="font-page-left">
-      <div class="header-caps color-orange padding-top-24 clickme desktop-only" onclick='deActivateFontDetailsPage()'>Back to results</div>
-      <div class="card-fixed-width card-fixed-width-selected">
-        <div class="fontname" id="font-page-name"></div>
-        <br>
-          <div class="fontsample">
-            <p class="desktop-only">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p><p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<p>
-              <p><a class="btn-orange" id="get-on-gfonts">Get on Google Fonts</a>
-          </div>
-      </div>
-        <div id='font-page-similiar' class="header-caps color-dark padding-top-24">Similiar to Frijole</div>
-        <div id="similiar-container" class="similiar-container">
-          <div class="card-fixed-width"><a class="fontname" id="info" href="https://fonts.google.com/specimen/Black Ops One">Black Ops One</a><img id="Black Ops One" onclick="starThisFont(this.id)" class="unstarred" src="img/star-inactive.svg"><br><div class="fontsample" style="font-family: Black Ops One;">That future is not one of ease or resting but of incessant striving so that we may fulfil the pledges we have so often taken and the one we shall take today.</div></div>
-          <div class="card-fixed-width"><a class="fontname" id="info" href="https://fonts.google.com/specimen/Slackey">Slackey</a><img id="Slackey" onclick="starThisFont(this.id)" class="unstarred" src="img/star-inactive.svg"><br><div class="fontsample" style="font-family: Slackey;">That future is not one of ease or resting but of incessant striving so that we may fulfil the pledges we have so often taken and the one we shall take today.</div></div>
-        </div>
 
+  <div class="font-page-left">
+    <div class="clickme hover-left4" onclick='deActivateFontDetailsPage()'>
+    <img class="back-arrow" src="img/back.svg">
+    <span class="instructions" id="font-page-name"></span>
     </div>
-  <div class="font-page-right">
-    <div class="header-caps color-orange padding-top-24 clickme mobile-only" onclick='deActivateFontDetailsPage()'>Back to results</div>
-    <p class="header-caps color-dark padding-top-24">Font Preview</p>
     <div class="select-mode">
-      <div id="select-pairings" onclick="activatePairings()" class="option option-selected">Pairings</div><span class="separator">/</span>
-      <div id="select-book" onclick="activateBook()" class="option">Book</div><span class="separator">/</span>
-      <div id="select-blog" onclick="activateBlog()" class="option">Blog</div><span class="separator">/</span>
-      <div id="select-presentation" onclick="activatePresentation()" class="option">Presentation</div>
+      <div id="select-waterfall" onclick="activate('waterfall')" class="option option-selected">Waterfall</div>
+      <div id="select-book" onclick="activate('book')" class="option">Book</div>
+      <div id="select-blog" onclick="activate('blog')" class="option">Blog</div>
+      <div id="select-presentation" onclick="activate('presentation')" class="option">Presentation</div>
+      <div id="select-pairings" onclick="activate('pairings')" class="option">Pairings</div>
     </div>
+
       <div id="pairings" class="preview-pairings">
           <div id="title-text" contenteditable="true" ondblclick="randomTitle()"  class="pairing-title">This is the title.</div>
           <div id="body-text" contenteditable="true" ondblclick="randomBody()"  class="pairing-body"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
@@ -82,6 +70,16 @@
             <a class="btn-orange" onclick="setTitleAndBody()"><i data-feather="loader"></i>Randomise</a>
             <a class="btn-orange" onclick="switchFonts()"><i data-feather="shuffle"></i>Swap Title & Body</a>
             </div>
+        </div>
+
+        <div id="waterfall" class="preview-waterfall">
+        <div class="card-fixed-width card-fixed-width-selected">
+          <br>
+            <div class="fontsample">
+              <p class="desktop-only">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p><p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<p>
+                <p><a class="btn-orange" id="get-on-gfonts">Get on Google Fonts</a>
+            </div>
+        </div>
         </div>
 
       <div id="blog" class="preview-blog">
@@ -124,6 +122,18 @@
         </div>
         </div>
       </div>
+
+    <div class="font-page-right">
+
+      <p id='font-page-similiar' class="header-caps color-orange">Get Started</p>
+      <p class="instructions">Click to preview</p>
+        <div id="similiar-container" class="similiar-container">
+          <div class="card-fixed-width"><a class="fontname" id="info" href="https://fonts.google.com/specimen/Black Ops One">Black Ops One</a><img id="Black Ops One" onclick="starThisFont(this.id)" class="unstarred" src="img/star-inactive.svg"><br><div class="fontsample" style="font-family: Black Ops One;">That future is not one of ease or resting but of incessant striving so that we may fulfil the pledges we have so often taken and the one we shall take today.</div></div>
+          <div class="card-fixed-width"><a class="fontname" id="info" href="https://fonts.google.com/specimen/Slackey">Slackey</a><img id="Slackey" onclick="starThisFont(this.id)" class="unstarred" src="img/star-inactive.svg"><br><div class="fontsample" style="font-family: Slackey;">That future is not one of ease or resting but of incessant striving so that we may fulfil the pledges we have so often taken and the one we shall take today.</div></div>
+        </div>
+
+    </div>
+
   </div>
 
 </div>

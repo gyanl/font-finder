@@ -7441,8 +7441,12 @@ function printStarredList() {
 
 function printMaxFontInArray(values) {
 
+  var currentFont = fonts[indexOfMax(values)];
+  var simpleBodyFont = fontData["name"][currentFont];
+  var bodyFontLink = "https://fonts.google.com/specimen/" + simpleBodyFont;
+
   var string1 = "<div class='card'>";
-  var string2 = "<div class='fontsample' style='font-family:\"";
+  var string2 = "<div onclick='activateFontDetailsPage(\"" + currentFont + "\")' class='fontsample clickme' style='font-family:\"";
   //simpleBodyFont
   var string3 = ";'>";
   // var string4 = "Lorem ipsum is boring to read, so how about this paragraph about my favorite color? My favorite color is coral red. It’s sort of like red, sort of like orange, sort of like pink, but not quite any of them.";
@@ -7450,11 +7454,8 @@ function printMaxFontInArray(values) {
   //<br><a href='bodyFontLink>
   var string5 = "</div></div>";
 
-  var currentFont = fonts[indexOfMax(values)];
-  var simpleBodyFont = fontData["name"][currentFont];
-  var bodyFontLink = "https://fonts.google.com/specimen/" + simpleBodyFont;
   // document.getElementById("conversation").innerHTML += string1 + "<a class='fontname' id='info' onclick='activateFontDetailsPage(\"" + currentFont + "\")'>" + currentFont +  "</a>" + "<img id='" + currentFont  +"'  onclick='starThisFont(this.id)' class='unstarred' src='img/star-inactive.svg'>" + "<br>" + string2 + simpleBodyFont + "\"; font-weight: " + "; font-style: "  + string3 + string4 + string5;
-  document.getElementById("conversation").innerHTML += string1 + "<a class='fontname' id='info' onclick='activateFontDetailsPage(\"" + currentFont + "\")'>" + currentFont +  "</a>" + "<img id='" + currentFont  +"'  onclick='starThisFont(this.id)' class='unstarred' src='img/star-inactive.svg'>" + "<br>" + string2 + simpleBodyFont + "\"; font-weight: " + fontWeightData[currentFont]["weight"] + "; font-style: " + fontWeightData[currentFont]["italics"] + string3 + string4 + string5;
+  document.getElementById("conversation").innerHTML += string1 + "<a class='fontname clickme' id='info' onclick='activateFontDetailsPage(\"" + currentFont + "\")'>" + currentFont +  "</a>" + "<img id='" + currentFont  +"'  onclick='starThisFont(this.id)' class='unstarred' src='img/star-inactive.svg'>" + "<br>" + string2 + simpleBodyFont + "\"; font-weight: " + fontWeightData[currentFont]["weight"] + "; font-style: " + fontWeightData[currentFont]["italics"] + string3 + string4 + string5;
 
 
 
@@ -7469,8 +7470,12 @@ function printMaxFontInArray(values) {
 
 function printMinFontInArray(values) {
 
+  var currentFont = fonts[indexOfMin(values)];
+  var simpleBodyFont = fontData["name"][currentFont];
+  var bodyFontLink = "https://fonts.google.com/specimen/" + simpleBodyFont;
+
   var string1 = "<div class='card-fixed-width'>";
-  var string2 = "<div class='fontsample' style='font-family: ";
+  var string2 = "<div onclick='activateFontDetailsPage(\"" + currentFont + "\")' class='fontsample clickme' style='font-family: ";
   //simpleBodyFont
   var string3 = ";'>";
   // var string4 = "Lorem ipsum is boring to read, so how about this paragraph about my favorite color? My favorite color is coral red. It’s sort of like red, sort of like orange, sort of like pink, but not quite any of them.";
@@ -7478,10 +7483,7 @@ function printMinFontInArray(values) {
   //<br><a href='bodyFontLink>
   var string5 = "</div></div>";
 
-  var currentFont = fonts[indexOfMin(values)];
-  var simpleBodyFont = fontData["name"][currentFont];
-  var bodyFontLink = "https://fonts.google.com/specimen/" + simpleBodyFont;
-  document.getElementById("similiar-container").innerHTML += string1 + "<a class='fontname' id='info' onclick='activateFontDetailsPage(\"" + currentFont + "\")'>" + currentFont +  "</a>" + "<img id='" + currentFont  +"'  onclick='starThisFont(this.id)' class='unstarred' src='img/star-inactive.svg'>" + "<br>" + string2 + simpleBodyFont + string3 + string4 + string5;
+  document.getElementById("similiar-container").innerHTML += string1 + "<a class='fontname clickme' id='info' onclick='activateFontDetailsPage(\"" + currentFont + "\");event.cancelBubble=true;'>" + currentFont +  "</a>" + "<img id='" + currentFont  +"'  onclick='starThisFont(this.id)' class='unstarred' src='img/star-inactive.svg'>" + "<br>" + string2 + simpleBodyFont + string3 + string4 + string5;
 
   var star = document.getElementById(currentFont);
 

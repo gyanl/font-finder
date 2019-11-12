@@ -290,10 +290,10 @@ button:active{
 
 .fontname:hover{
 	color: #6C63FF;
-	text-decoration: underline;
 }
 
 .unstarred{
+	z-index: 12;
 	-webkit-transform: translateY(8px);
 	    -ms-transform: translateY(8px);
 	        transform: translateY(8px);
@@ -529,17 +529,20 @@ button:active{
 }
 
 .clickme{
+	cursor: pointer;
+}
+
+.goback{
 	flex-grow: 0;
 	flex-shrink: 0;
 	margin-left: -22px;
-	cursor: pointer;
 	border-radius: 60px;
 	width: auto;
 	padding: 8px 20px 8px 8px;
 	width: fit-content;
 }
 
-.clickme:hover{
+.goback:hover{
 	background-color: rgba(255, 255, 255, 0.1);
 }
 

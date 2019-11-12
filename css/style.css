@@ -537,7 +537,6 @@ button:active{
 	flex-shrink: 0;
 	margin-left: -22px;
 	border-radius: 60px;
-	width: auto;
 	padding: 8px 20px 8px 8px;
 	width: fit-content;
 }
@@ -607,6 +606,10 @@ button:active{
 	padding: 60px;
 }
 
+.preview-waterfall{
+
+}
+
 .preview-presentation{
 	display: none;
 	background: #FFFFFF;
@@ -622,7 +625,7 @@ button:active{
 }
 
 .preview-pairings{
-	display: block;
+	display: none;
 	background: #FFFFFF;
 	border: 0.5px solid #2B2743;
 	padding: 60px;
@@ -803,8 +806,6 @@ height: 40px;
 	margin-left: 0px;
 	cursor: pointer;
 	border-radius: 60px;
-	width: auto;
-	padding: 8px;
 }
 
 .preview-blog{

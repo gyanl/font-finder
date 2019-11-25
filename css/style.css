@@ -292,6 +292,10 @@ button:active{
 	color: #6C63FF;
 }
 
+.download{
+	margin-left: 8px;
+}
+
 .unstarred{
 	z-index: 12;
 	-webkit-transform: translateY(8px);

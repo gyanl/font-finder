@@ -278,8 +278,8 @@ button:active{
 .fontname{
 	font-style: normal;
 	font-family: "Libre Franklin", sans-serif;
-	line-height: 56px;
-	font-size: 18px;
+	line-height: 54px;
+	font-size: 16px;
 	font-weight: 600;
 	text-decoration: none;
 	color: rgba(43, 39, 67, 0.6);
@@ -607,11 +607,13 @@ button:active{
 	display: none;
 	background: #FFFFFF;
 	border: 0.5px solid #2B2743;
-	padding: 60px;
+	padding: 32px 60px 30px 60px;
 }
 
 .preview-waterfall{
-
+	background: #FFFFFF;
+	border: 0.5px solid #2B2743;
+	padding: 0px 60px 30px 60px;
 }
 
 .preview-presentation{
@@ -625,14 +627,14 @@ button:active{
 	display: none;
 	background: #FFFFFF;
 	border: 0.5px solid #2B2743;
-	padding: 60px;
+	padding: 32px 60px 30px 60px;
 }
 
 .preview-pairings{
 	display: none;
 	background: #FFFFFF;
 	border: 0.5px solid #2B2743;
-	padding: 60px;
+	padding: 32px 60px 30px 60px;
 }
 
 .book-title{
@@ -823,6 +825,11 @@ height: 40px;
 .preview-pairings{
 	padding: 32px;
 }
+
+.preview-waterfall{
+	padding: 12px 32px 16px 32px;
+}
+
 
 .font-page{
 	flex-direction: column;

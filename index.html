@@ -33,7 +33,7 @@
 <div class="header">
   <img class="logo" onclick="deActivateFontDetailsPage()" src="img/ff.svg" alt="">
   <div class="navigation">
-    <button id="starred-button" onclick="toggleStarred()" onfocus="showStarred()" class="navigation-element"><img class="star" src="img/star.svg">Starred</button>
+    <button id="starred-button" onclick="toggleStarred()" class="navigation-element"><img class="star" src="img/star.svg">Starred</button>
   </div>
 </div>
 
@@ -47,9 +47,16 @@
     <div class="hover-left4 goback clickme" onclick='deActivateFontDetailsPage()'>
         <img class="back-arrow" src="img/back.svg">
         <span class="instructions" id="font-page-name"></span>
-        <a id="get-on-gfonts"><img class='unstarred download' src='img/download.svg'></a>
-
     </div>
+
+    <a id="get-on-gfonts">
+      <img class='unstarred download' src='img/download.svg'>
+    </a>
+
+    <div id="current-starred">
+      <img id="active-star" class='unstarred' src='img/star-inactive.svg'>
+    </div>
+
     <div class="select-mode">
       <div id="select-waterfall" onclick="activate('waterfall')" class="option option-selected">Waterfall</div>
       <div id="select-book" onclick="activate('book')" class="option">Book</div>
@@ -77,11 +84,11 @@
         <div id="waterfall" class="preview-waterfall">
           <br>
             <div class="fontsample">
-              <p style="font-size: 32px;" class="desktop-only">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              <p style="font-size: 24px;" >Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.<p>
-              <p style="font-size: 16px;" >Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<p>
-              <p style="font-size: 12px;" >Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<p>
-              <p style="font-size: 8px;" >Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<p>
+              <p style="font-size: 32px;" class="desktop-only">Long years ago now we made a tryst with destiny.</p>
+              <p style="font-size: 24px;" >And now the time comes when we shall redeem our pledge, not wholly or in full measure, but very substantially.<p>
+              <p style="font-size: 16px;" >At the stroke of the midnight hour, when the world sleeps, India will awake to life and freedom. A moment comes, which comes, but rarely in history, when we step out from the old to the new, when an age ends, and when the soul of a nation, long suppressed, finds utterance.<p>
+              <p style="font-size: 12px;" >At the dawn of history India started on her unending quest, and trackless centuries are filled with her striving and the grandeur of her success and her failures. Through good and ill fortune alike she has never lost sight of that quest or forgotten the ideals which gave her strength. We end today a period of ill fortune and India discovers herself again.<p>
+              <p style="font-size: 8px;" >The achievement we celebrate today is but a step, an opening of opportunity, to the greater triumphs and achievements that await us. Are we brave enough and wise enough to grasp this opportunity and accept the challenge of the future? Freedom and power bring responsibility. The responsibility rests upon this assembly, a sovereign body representing the sovereign people of India. Before the birth of freedom we have endured all the pains of labour and our hearts are heavy with the memory of this sorrow. Some of those pains continue even now. Nevertheless, the past is over and it is the future that beckons to us now.<p>
             </div>
         </div>
 

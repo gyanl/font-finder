@@ -7174,7 +7174,7 @@ var pangrams = [
   "Few black taxis drive up major roads on quiet hazy nights.",
   "Lorem ipsum dolor set amet."
 ];
-
+var currentActiveFont;
 var destiny = [
   "Long years ago now we made a tryst with destiny, and now the time comes when we shall redeem our pledge, not wholly or in full measure, but very substantially.",
   "It is fitting that at this solemn moment we take the pledge of dedication to the service of India and her people and to the still larger cause of humanity.",
@@ -7224,6 +7224,7 @@ function activate(current){
 }
 
 function activateFontDetailsPage(fontName){
+  currentActiveFont = fontName;
   document.getElementById('title-font-name').innerHTML = fontName;
   document.getElementById('body-font-name').innerHTML = fontName;
   document.getElementById('font-page-name').innerHTML = fontName;
@@ -7233,6 +7234,14 @@ function activateFontDetailsPage(fontName){
   document.getElementById('font-page').style.fontStyle = fontWeightData[fontName]["italics"];
   document.getElementById('get-on-gfonts').href = "https://fonts.google.com/specimen/" + fontData["name"][fontName];
   displayClosest(fontName);
+
+  document.getElementById('current-starred').innerHTML = "<img onclick='starThisFont(\"" + fontName + "\")' id='"+ fontName +"' class='unstarred' src='img/star-inactive.svg'>";
+
+
+  if(starredFonts.includes(fontName)){
+  document.getElementById(fontName).classList.add("starred");
+  document.getElementById(fontName).src = "img/star-active.svg";
+}
 
   document.getElementById('font-page').style.display = "flex";
   document.getElementById('results').style.display = "none";
@@ -7350,6 +7359,7 @@ function starThisFont(nameOfFont){
   }
   printStarredList();
   console.log(starredFonts);
+
 }
 
 function toggleStarred(){

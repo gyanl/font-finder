@@ -623,6 +623,10 @@ button:active{
 	padding: 20px 20px 28px 60px;
 }
 
+.preview-presentation-internal{
+	display: flex;
+}
+
 .preview-blog{
 	display: none;
 	background: #FFFFFF;

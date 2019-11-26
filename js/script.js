@@ -6982,6 +6982,7 @@ var fontWeightData = {
 };
 
 var activeAdjectives = [];
+
 var starredFonts = [];
 
 var values = [];
@@ -7187,6 +7188,13 @@ var destiny = [
   "Yet the turning point is past, and history begins anew for us, the history which we shall live and act and others will write about.",
   "To the nations and people of the world we send greetings and pledge ourselves to cooperate with them in furthering peace, freedom and democracy."
 ];
+
+function onPageLoad(){
+  // Attempt to start with a random adjective selected.
+  var rndFeature = adjectives[Math.floor(Math.random()*adjectives.length)];
+  console.log(rndFeature);
+  setActive(rndFeature);
+}
 
 function scrollToTop() {
 window.scrollTo({top: 0, behavior: 'smooth'});

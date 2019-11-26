@@ -7209,12 +7209,12 @@ function activate(current){
   document.getElementById('book').style.display = "none";
   document.getElementById('blog').style.display = "none";
   document.getElementById('presentation').style.display = "none";
-  document.getElementById('pairings').style.display = "none";
+  // document.getElementById('pairings').style.display = "none";
 
   document.getElementById(current).style.display = "block";
 
   document.getElementById('select-waterfall').classList.remove('option-selected');
-  document.getElementById('select-pairings').classList.remove('option-selected');
+  // document.getElementById('select-pairings').classList.remove('option-selected');
   document.getElementById('select-book').classList.remove('option-selected');
   document.getElementById('select-blog').classList.remove('option-selected');
   document.getElementById('select-presentation').classList.remove('option-selected');

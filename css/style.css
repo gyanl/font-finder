@@ -796,6 +796,10 @@ height: 40px;
 
 @media (max-width:700px){
 
+	.card-fixed-width{
+		margin: 12px 0 0 0;
+	}
+
 	.mobile-only{
 		display: block;
 	}

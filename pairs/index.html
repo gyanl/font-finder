@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>WhatFont?</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/fonts.css">
+
+    <script type="text/javascript" src="js/script.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+
+
+    <meta property="og:url"                content="http://gyanl.com/what-font" />
+    <meta property="og:type"               content="article" />
+    <meta property="og:title"              content="What font should I use today?" />
+    <meta property="og:description"        content="A little tool to help you pick fonts." />
+    <meta property="og:image"              content="https://gyanl.com/what-font/img/what-font.png" />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-150077123-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-150077123-1');
+    </script>
+
+</head>
+
+<body onLoad="init()">
+
+    <div class="box">
+            <div class="titletext" id="title-text" ondblclick="setTitleFont()" contenteditable="true" spellcheck="false">
+                Lorem Ipsum
+            </div>
+      <p></p>
+            <div class="bodytext" id="body-text" ondblclick="setBodyFont()" contenteditable="true" spellcheck="false">
+
+              One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment.
+              <p>“What’s happened to me?” he thought. It wasn’t a dream. His room, a proper human room although a little too small, lay peacefully between its four familiar walls. A collection of textile samples lay spread out on the table — Samsa was a travelling salesman — and above it there hung a picture that he had recently cut out of an illustrated magazine and housed in a nice, gilded frame.
+            </div>
+            <div class="whichfont" id="info">
+             Double click to change.
+            </div>
+            <div class="buttons">
+            <button onclick="textBigger()"><i data-feather="plus-circle"></i></button>
+            <button onclick="textSmaller()"><i data-feather="minus-circle"></i></button>
+
+            <button onclick="alignLeft()"><i data-feather="align-left"></i></button>
+            <button onclick="alignCenter()"><i data-feather="align-center"></i></button>
+            <button onclick="alignRight()"><i data-feather="align-right"></i></button>
+<br>
+            <button onclick="setTitleAndBody()"><i data-feather="loader"></i>Change Fonts</button>
+            <button onclick="switchFonts()"><i data-feather="shuffle"></i>Swap Fonts</button>
+            <button onclick="randomiseBackground()"><i data-feather="droplet"></i>Change Color</button>
+            </div>
+
+    </div>
+<p>
+
+    <script>
+      feather.replace()
+    </script>
+
+</body>
+
+</html>

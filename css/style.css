@@ -11,17 +11,24 @@ body{
 	background: #FBFBFF;
 }
 
+.article{
+	padding-top: 120px;
+	padding-bottom: 80px;
+	max-width: 800px;
+	margin: auto;
+}
+
 .try-these{
 	display: flex;
 	flex-direction: row;
 }
 
 .dark-card{
-	max-width: 300px;
+	max-width: 380px;
 	background-color: #151321;
 	border-radius: 8px;
 	padding: 36px 32px 32px 32px;
-	margin: 8px;
+	margin: 8px 12px 8px 0px;
 }
 
 .light-purple{
@@ -717,7 +724,7 @@ button:active{
 
 .blog-title{
 	font-weight: 600;
-	font-size: 24px;
+	font-size: 28px;
 }
 
 .blog-subtitle{
@@ -766,9 +773,9 @@ height: 40px;
 
 .blog-image-caption{
 	font-size: 14px;
-	padding-left: 4px;
+	text-align: center;
 	opacity: .75;
-	margin-top: 0px;
+	margin-top: 6px;
 	display: flex;
 	flex-direction:column;
 }
@@ -998,5 +1005,11 @@ button{
 		max-width: none;
 		padding: 32px 24px 20px 24px;
 		margin: 8px 4px 4px 4px;
+	}
+
+	.article{
+		padding: 90px 24px 32px 24px;
+		max-width: 800px;
+		margin: auto;
 	}
 }

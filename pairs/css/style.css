@@ -201,7 +201,12 @@ button:hover{
 		margin: 20px 10px 10px 10px;
 	}
 
+	.desktop-only{
+		display: none;
+	}
+
 	.bodytext{
+		min-height: auto;
 		height: auto;
 		-webkit-user-select: none;
 		-moz-user-select: none;

@@ -18,6 +18,28 @@ body{
 	margin: auto;
 }
 
+.caret-right{
+	transform: translateY(2px);
+}
+
+.nice-underline{
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: 600;
+	margin-left: -8px;
+	color: #FF7760;
+	text-decoration: none;
+	border-radius: 32px;
+	padding: 8px 12px 8px 12px;
+	transform: translateX(0px);
+	transition: .2s;
+}
+
+.nice-underline:hover{
+	background-color: #2B2743;
+	margin-left: 2px;
+}
+
 .try-these{
 	display: flex;
 	flex-direction: row;

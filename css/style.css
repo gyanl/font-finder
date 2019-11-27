@@ -8,8 +8,41 @@ body{
 	display: block;
 	max-height: 100%;
 	width: 100%;
-	height: 100%;
 	background: #FBFBFF;
+}
+
+.align-right{
+	text-align: right;
+	display: block;
+	right: 0;
+}
+
+.align-left{
+	text-align: left;
+	display: block;
+	left: 0;
+}
+
+.footer{
+padding: 12px 132px 12px 120px;
+font-size: 12px;
+background: #fff;
+opacity: .8;
+position: relative;
+bottom: 0;
+right: 0;
+left: 0;
+display: flex;
+flex-direction: row;
+justify-content:space-between;
+}
+
+.footertext a{
+	text-decoration: none;
+}
+
+.footertext a:hover{
+	text-decoration: underline;
 }
 
 .header{
@@ -111,6 +144,7 @@ body{
 }
 
 .star{
+	margin-right: 2px;
 	-webkit-transition: .2s;
 	-o-transition: .2s;
 	transition: .2s;
@@ -918,6 +952,19 @@ button{
 	.star{
 		transition: .2s;
 		transform: translateY(5px);
+	}
+
+	.footer{
+		display: flex;
+		flex-direction: column;
+		justify-content:space-between;
+		padding: 24px;
+	}
+
+	.align-right{
+		text-align: left;
+		right: auto;
+		padding-top: 8px;
 	}
 
 }

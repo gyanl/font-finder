@@ -7253,8 +7253,13 @@ function activate(current){
   document.getElementById('select-presentation').classList.remove('option-selected');
   document.getElementById('select-characters').classList.remove('option-selected');
 
+  // Update aria-selected on all tabs
+  var tabs = document.querySelectorAll('[role="tab"]');
+  tabs.forEach(function(tab) { tab.setAttribute('aria-selected', 'false'); });
+
   var temp = 'select-' + current;
   document.getElementById(temp).classList.add('option-selected');
+  document.getElementById(temp).setAttribute('aria-selected', 'true');
 }
 
 function activateFontDetailsPage(fontName){
@@ -7498,7 +7503,7 @@ function printMaxFontInArray(values) {
   var simpleBodyFont = fontData["name"][currentFont];
   var bodyFontLink = "https://fonts.google.com/specimen/" + simpleBodyFont;
 
-  var string1 = "<div class=’card clickme’ onclick=’activateFontDetailsPage(\"" + currentFont + "\")’>";
+  var string1 = "<div class=’card clickme’ role=’listitem’ tabindex=’0’ onclick=’activateFontDetailsPage(\"" + currentFont + "\")’ onkeydown=’if(event.key===\"Enter\")activateFontDetailsPage(\"" + currentFont + "\")’>";
   var string2 = "<div class=’fontsample’ style=’font-family:\"";
   //simpleBodyFont
   var string3 = ";’>";

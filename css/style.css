@@ -279,7 +279,12 @@ button:hover{
 }
 
 button:focus{
-	outline:0;
+	outline: 2px solid #6C63FF;
+	outline-offset: 2px;
+}
+
+button:focus:not(:focus-visible){
+	outline: none;
 }
 
 button:active{
@@ -369,7 +374,12 @@ button:active{
 }
 
 .card:focus{
-	outline:0;
+	outline: 2px solid #6C63FF;
+	outline-offset: 2px;
+}
+
+.card:focus:not(:focus-visible){
+	outline: none;
 }
 
 /* .card:active{
@@ -604,7 +614,22 @@ button:active{
 }
 
 .card-fixed-width:focus{
-	outline:0;
+	outline: 2px solid #6C63FF;
+	outline-offset: 2px;
+}
+
+.card-fixed-width:focus:not(:focus-visible){
+	outline: none;
+}
+
+/* Global focus-visible styles for interactive elements */
+[role="tab"]:focus-visible,
+[role="button"]:focus-visible,
+.font-page-action-btn:focus-visible,
+.goback:focus-visible{
+	outline: 2px solid #FF775F;
+	outline-offset: 2px;
+	border-radius: 4px;
 }
 
 /* .card-fixed-width:active{
@@ -674,6 +699,12 @@ button:active{
 	border-radius: 60px;
 	padding: 8px 20px 8px 8px;
 	width: fit-content;
+	background: none;
+	border: none;
+	color: inherit;
+	font-size: inherit;
+	display: flex;
+	align-items: center;
 }
 
 .goback:hover{

@@ -765,6 +765,31 @@ button:active{
 	padding: 32px 60px 30px 60px;
 }
 
+.preview-characters{
+	display: none;
+	background: #FFFFFF;
+	border: 0.5px solid #2B2743;
+	padding: 32px 60px 30px 60px;
+}
+
+.characters-heading{
+	font-family: "Libre Franklin", sans-serif;
+	font-size: 12px;
+	font-weight: 600;
+	text-transform: uppercase;
+	color: #847FA1;
+	margin-bottom: 4px;
+	font-style: normal;
+}
+
+.characters-line{
+	font-size: 32px;
+	line-height: 1.6;
+	letter-spacing: 4px;
+	margin-top: 0;
+	margin-bottom: 24px;
+}
+
 .preview-pairings{
 	display: none;
 	background: #FFFFFF;

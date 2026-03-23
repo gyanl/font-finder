@@ -7217,6 +7217,7 @@ function activate(current){
   document.getElementById('book').style.display = "none";
   document.getElementById('blog').style.display = "none";
   document.getElementById('presentation').style.display = "none";
+  document.getElementById('characters').style.display = "none";
   // document.getElementById('pairings').style.display = "none";
 
   document.getElementById(current).style.display = "block";
@@ -7226,6 +7227,7 @@ function activate(current){
   document.getElementById('select-book').classList.remove('option-selected');
   document.getElementById('select-blog').classList.remove('option-selected');
   document.getElementById('select-presentation').classList.remove('option-selected');
+  document.getElementById('select-characters').classList.remove('option-selected');
 
   var temp = 'select-' + current;
   document.getElementById(temp).classList.add('option-selected');

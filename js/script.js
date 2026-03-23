@@ -6983,7 +6983,7 @@ var fontWeightData = {
 
 var activeAdjectives = [];
 
-var starredFonts = [];
+var starredFonts = JSON.parse(localStorage.getItem('starredFonts') || '[]');
 
 var values = [];
 var fonts = [
@@ -7190,6 +7190,11 @@ var destiny = [
 ];
 
 function onPageLoad(){
+  // Load persisted starred fonts
+  if (starredFonts.length > 0) {
+    printStarredList();
+  }
+
   // Attempt to start with a random adjective selected.
   var rndFeature = adjectives[Math.floor(Math.random()*adjectives.length)];
   console.log(rndFeature);
@@ -7364,6 +7369,7 @@ function starThisFont(nameOfFont){
       starredFonts.push(nameOfFont);
       star.classList.add("starred");
   }
+  localStorage.setItem('starredFonts', JSON.stringify(starredFonts));
   printStarredList();
   console.log(starredFonts);
 

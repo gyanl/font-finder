@@ -444,6 +444,16 @@ button:active{
 	display: inline-block;
 }
 
+.weight-label{
+	font-family: "Libre Franklin", sans-serif;
+	font-size: 11px;
+	font-weight: 400;
+	font-style: normal;
+	color: rgba(43, 39, 67, 0.4);
+	margin-left: 6px;
+	vertical-align: middle;
+}
+
 .starred-font-list{
 	z-index: 10;
 	background: #2B2743;

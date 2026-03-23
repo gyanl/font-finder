@@ -952,6 +952,7 @@ height: 40px;
 @media (max-width:1200px){
 	.card{
 		width:38%;
+	}
 }
 
 @media (max-width:700px){
@@ -968,65 +969,91 @@ height: 40px;
 		display: none;
 	}
 
-.option{
+	.option{
 		padding: 0px 2px 10px 2px;
-}
+	}
 
-.clickme{
-	margin-left: 0px;
-	cursor: pointer;
-	border-radius: 60px;
-}
+	.clickme{
+		margin-left: 0px;
+		cursor: pointer;
+		border-radius: 60px;
+	}
 
-.preview-blog{
-	padding: 32px;
-}
+	.preview-blog{
+		padding: 32px;
+	}
 
-.preview-book{
-	padding: 32px;
-}
+	.preview-book{
+		padding: 32px;
+	}
 
-.preview-pairings{
-	padding: 32px;
-}
+	.preview-pairings{
+		padding: 32px;
+	}
 
-.preview-waterfall{
-	padding: 12px 32px 16px 32px;
-}
+	.preview-characters{
+		padding: 32px;
+	}
 
+	.preview-waterfall{
+		padding: 12px 32px 16px 32px;
+	}
 
-.font-page{
-	flex-direction: column;
-}
+	.preview-presentation{
+		padding: 20px;
+	}
 
-.select-mode{
-	flex
-}
+	.preview-presentation-internal{
+		flex-direction: column;
+	}
 
-.font-page-left{
-	padding: 12px;
-	margin: 0;
-}
+	.presentation-text{
+		width: 100%;
+	}
 
-.font-page-right{
-	padding: 12px;
-	margin: 0;
-}
+	.presentation-image-wrapper{
+		width: 100%;
+		margin-top: 16px;
+	}
 
-.starred-font-list{
-	border-radius: 0;
-	height: auto;
-	max-width: 100%;
-	right: 0;
-	max-height: 80%;
-}
+	.characters-line{
+		font-size: 20px;
+		letter-spacing: 2px;
+	}
+
+	.font-page{
+		flex-direction: column;
+	}
+
+	.select-mode{
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.font-page-left{
+		padding: 12px;
+		margin: 0;
+	}
+
+	.font-page-right{
+		padding: 12px;
+		margin: 0;
+	}
+
+	.starred-font-list{
+		border-radius: 0;
+		height: auto;
+		max-width: 100%;
+		right: 0;
+		max-height: 80%;
+	}
 
 	.card{
 		height: auto;
 		width: auto;
 		padding: 12px 24px 32px 24px;
 		margin: 8px 14px 8px 14px;
-}
+	}
 
 	.tag-picker{
 		background: #2B2743;
@@ -1042,24 +1069,25 @@ height: 40px;
 	.logo{
 		display: block;
 		margin-left: 14px;
-}
+	}
 
-.navigation{
-	margin-right: 20px;
-}
+	.navigation{
+		margin-right: 20px;
+	}
 
-.navigation-element{
-	font-size: 14px;
-}
+	.navigation-element{
+		font-size: 14px;
+	}
+
 	.suggestions{
 		max-width: 100%;
 		display: inline-block;
 		padding: 0;
 	}
 
-button{
-	opacity: 1;
-}
+	button{
+		opacity: 1;
+	}
 
 	.results{
 		margin: 16px 4px 16px 4px;

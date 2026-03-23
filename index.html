@@ -45,17 +45,20 @@
 <div id="font-page" class="font-page animated fadeInDown">
 
   <div class="font-page-left">
-    <div class="hover-left4 goback clickme" onclick='deActivateFontDetailsPage()'>
-        <img class="back-arrow" src="img/back.svg">
-        <span class="instructions" id="font-page-name"></span>
-    </div>
+    <div class="font-page-header">
+      <div class="hover-left4 goback clickme" onclick='deActivateFontDetailsPage()'>
+          <img class="back-arrow" src="img/back.svg">
+          <span class="instructions" id="font-page-name"></span>
+      </div>
 
-    <a id="get-on-gfonts">
-      <img class='unstarred download' src='img/download.svg'>
-    </a>
-
-    <div id="current-starred">
-      <img id="active-star" class='unstarred' src='img/star-inactive.svg'>
+      <div class="font-page-actions">
+        <a id="get-on-gfonts" class="font-page-action-btn">
+          <img class='font-page-icon' src='img/download.svg'>
+        </a>
+        <div id="current-starred" class="font-page-action-btn">
+          <img id="active-star" class='font-page-icon' src='img/star-inactive.svg'>
+        </div>
+      </div>
     </div>
 
     <div class="select-mode">

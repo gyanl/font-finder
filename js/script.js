@@ -7243,7 +7243,7 @@ function activateFontDetailsPage(fontName){
   document.getElementById('get-on-gfonts').href = "https://fonts.google.com/specimen/" + fontData["name"][fontName];
   displayClosest(fontName);
 
-  document.getElementById('current-starred').innerHTML = "<img onclick='starThisFont(\"" + fontName + "\")' id='"+ fontName +"' class='unstarred' src='img/star-inactive.svg'>";
+  document.getElementById('current-starred').innerHTML = "<img onclick='starThisFont(\"" + fontName + "\")' id='"+ fontName +"' class='font-page-icon' src='img/star-inactive.svg'>";
 
 
   if(starredFonts.includes(fontName)){

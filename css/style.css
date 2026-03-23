@@ -599,6 +599,34 @@ button:active{
 	padding-top: 24px;
 }
 
+.font-page-header{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.font-page-actions{
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+.font-page-action-btn{
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+}
+
+.font-page-icon{
+	background: #F1F2F5;
+	border-radius: 36px;
+	transition: .1s;
+}
+
+.font-page-icon:hover{
+	transform: translateY(-2px);
+}
+
 .select-mode{
 	display: flex;
 	justify-content:flex-start;

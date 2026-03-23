@@ -7517,10 +7517,12 @@ function displayFonts() {
   document.getElementById("conversation").innerHTML = "";
 
   if (activeAdjectives.length == 0) {
-    document.getElementById("descriptor").innerHTML = "Nothing to show. Pick a word to get started.";
+    document.getElementById("descriptor").innerHTML = "";
+    document.getElementById("empty-state").style.display = "block";
   }
 
   else {
+    document.getElementById("empty-state").style.display = "none";
     for (i = 0; i < fonts.length; i++) {
       values[i] = 0;
     }

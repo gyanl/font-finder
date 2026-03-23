@@ -306,6 +306,25 @@ button:active{
 	font-weight: 600;
 }
 
+.empty-state{
+	display: none;
+	text-align: center;
+	padding: 60px 20px;
+}
+
+.empty-state-image{
+	width: 120px;
+	opacity: .6;
+	margin-bottom: 16px;
+}
+
+.empty-state-text{
+	font-family: "Libre Franklin", sans-serif;
+	font-size: 16px;
+	font-weight: 600;
+	color: #847FA1;
+}
+
 .card.clear {
   clear: both;
 }

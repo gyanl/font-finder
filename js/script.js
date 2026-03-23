@@ -7200,17 +7200,14 @@ function scrollToTop() {
 window.scrollTo({top: 0, behavior: 'smooth'});
 }
 
-//Function to remove given element from array
-Array.prototype.remove = function() {
-      var what, a = arguments, L = a.length, ax;
-      while (L && this.length) {
-          what = a[--L];
-          while ((ax = this.indexOf(what)) !== -1) {
-              this.splice(ax, 1);
-          }
-      }
-      return this;
-};
+// Utility function to remove element from array (avoids monkey-patching Array.prototype)
+function removeFromArray(arr, item) {
+    var index = arr.indexOf(item);
+    if (index !== -1) {
+        arr.splice(index, 1);
+    }
+    return arr;
+}
 
 function activate(current){
   document.getElementById('waterfall').style.display = "none";
@@ -7360,7 +7357,7 @@ function starThisFont(nameOfFont){
   if (starredFonts.includes(nameOfFont) == true) {
       star.src = "img/star-inactive.svg";
       star.classList.remove("starred");
-      starredFonts.remove(nameOfFont);
+      removeFromArray(starredFonts, nameOfFont);
     }
   else {
       star.src = "img/star-active.svg";
@@ -7392,7 +7389,7 @@ function setActive(feature){
       //Toggle Button State
       if (tag.classList.contains("buttonActive")){
         tag.classList.remove("buttonActive");
-        activeAdjectives.remove(feature);
+        removeFromArray(activeAdjectives, feature);
       }
 
       else{

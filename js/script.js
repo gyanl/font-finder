@@ -7199,7 +7199,29 @@ function onPageLoad(){
   var rndFeature = adjectives[Math.floor(Math.random()*adjectives.length)];
   console.log(rndFeature);
   setActive(rndFeature);
+
+  // Check URL hash for direct font link (e.g. #font=Lobster)
+  var hash = window.location.hash;
+  if (hash.startsWith('#font=')) {
+    var fontName = decodeURIComponent(hash.substring(6));
+    if (fonts.includes(fontName)) {
+      activateFontDetailsPage(fontName);
+    }
+  }
 }
+
+// Handle browser back/forward navigation
+window.addEventListener('hashchange', function() {
+  var hash = window.location.hash;
+  if (hash.startsWith('#font=')) {
+    var fontName = decodeURIComponent(hash.substring(6));
+    if (fonts.includes(fontName)) {
+      activateFontDetailsPage(fontName);
+    }
+  } else {
+    deActivateFontDetailsPage();
+  }
+});
 
 function scrollToTop() {
 window.scrollTo({top: 0, behavior: 'smooth'});
@@ -7258,6 +7280,10 @@ function activateFontDetailsPage(fontName){
   document.getElementById('font-page').style.display = "flex";
   document.getElementById('results').style.display = "none";
   document.getElementById('tag-picker').style.display = "none";
+
+  // Update URL hash so users can bookmark/share font pages
+  window.location.hash = 'font=' + encodeURIComponent(fontName);
+
   scrollToTop();
 }
 
@@ -7265,6 +7291,9 @@ function deActivateFontDetailsPage(){
   document.getElementById('font-page').style.display = "none";
   document.getElementById('results').style.display = "block";
   document.getElementById('tag-picker').style.display = "block";
+
+  // Clear URL hash when leaving font detail page
+  history.pushState("", document.title, window.location.pathname + window.location.search);
 }
 
 function alignLeft(){

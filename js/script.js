@@ -7462,7 +7462,7 @@ function printStarredFont(item) {
   var string2 = "<div class='fontsample clickme' onclick='activateFontDetailsPage(\"" + currentFont + "\")' style='font-family: ";
   //simpleBodyFont
   var string3 = ";'>";
-  // var string4 = "Lorem ipsum is boring to read, so how about this paragraph about my favorite color? My favorite color is coral red. It’s sort of like red, sort of like orange, sort of like pink, but not quite any of them.";
+  // var string4 = "Lorem ipsum is boring to read, so how about this paragraph about my favorite color? My favorite color is coral red. It's sort of like red, sort of like orange, sort of like pink, but not quite any of them.";
 
   var string4 = pangrams[Math.floor(Math.random()*pangrams.length)] + " " + pangrams[Math.floor(Math.random()*pangrams.length)] + "<p>";
 
@@ -7503,15 +7503,15 @@ function printMaxFontInArray(values) {
   var simpleBodyFont = fontData["name"][currentFont];
   var bodyFontLink = "https://fonts.google.com/specimen/" + simpleBodyFont;
 
-  var string1 = "<div class=’card clickme’ role=’listitem’ tabindex=’0’ onclick=’activateFontDetailsPage(\"" + currentFont + "\")’ onkeydown=’if(event.key===\"Enter\")activateFontDetailsPage(\"" + currentFont + "\")’>";
-  var string2 = "<div class=’fontsample’ style=’font-family:\"";
+  var string1 = "<div class='card clickme' role='listitem' tabindex='0' onclick='activateFontDetailsPage(\"" + currentFont + "\")' onkeydown='if(event.key===\"Enter\")activateFontDetailsPage(\"" + currentFont + "\")'>";
+  var string2 = "<div class='fontsample' style='font-family:\"";
   //simpleBodyFont
-  var string3 = ";’>";
+  var string3 = ";'>";
   var string4 = destiny[Math.floor(Math.random()*destiny.length)];
-  //<br><a href=’bodyFontLink>
+  //<br><a href='bodyFontLink>
   var string5 = "</div></div>";
 
-  document.getElementById("conversation").innerHTML += string1 + "<a class=’fontname’>" + currentFont +  "</a>" + "<a href=\"" + bodyFontLink + "\" target=’_blank’ onclick=’event.stopPropagation()’> <img class=’unstarred download’ src=’img/download.svg’></a>" + "<img id=’" + currentFont  +"’  onclick=’starThisFont(this.id);event.stopPropagation();’ class=’unstarred’ src=’img/star-inactive.svg’>" + "<br>" + string2 + simpleBodyFont + "\"; font-weight: " + fontWeightData[currentFont]["weight"] + "; font-style: " + fontWeightData[currentFont]["italics"] + string3 + string4 + string5;
+  document.getElementById("conversation").innerHTML += string1 + "<a class='fontname'>" + currentFont +  "</a>" + "<a href=\"" + bodyFontLink + "\" target='_blank' onclick='event.stopPropagation()'> <img class='unstarred download' src='img/download.svg'></a>" + "<img id='" + currentFont  +"'  onclick='starThisFont(this.id);event.stopPropagation();' class='unstarred' src='img/star-inactive.svg'>" + "<br>" + string2 + simpleBodyFont + "\"; font-weight: " + fontWeightData[currentFont]["weight"] + "; font-style: " + fontWeightData[currentFont]["italics"] + string3 + string4 + string5;
 
 
 
@@ -7534,7 +7534,7 @@ function printMinFontInArray(values) {
   var string2 = "<div onclick='activateFontDetailsPage(\"" + currentFont + "\")' class='fontsample clickme' style='font-family: ";
   //simpleBodyFont
   var string3 = ";'>";
-  // var string4 = "Lorem ipsum is boring to read, so how about this paragraph about my favorite color? My favorite color is coral red. It’s sort of like red, sort of like orange, sort of like pink, but not quite any of them.";
+  // var string4 = "Lorem ipsum is boring to read, so how about this paragraph about my favorite color? My favorite color is coral red. It's sort of like red, sort of like orange, sort of like pink, but not quite any of them.";
   var string4 = destiny[Math.floor(Math.random()*destiny.length)];
   //<br><a href='bodyFontLink>
   var string5 = "</div></div>";
